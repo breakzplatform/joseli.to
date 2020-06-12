@@ -72,24 +72,26 @@ export default () => {
             );
           })}
         </ul>
-        {!!promo && (
-          <div className="promo-home">
-            <div>
-              <img src={promo.logo} className="promo-home__logo" />
-            </div>
-            <div>
-              {promo.text[0]}
-              <a
-                href={promo.link.url}
-                target="_blank"
-                className="promo-home__link"
-              >
-                {promo.link.text}
-              </a>
-              {promo.text[1]}
-            </div>
-          </div>
-        )}
+        <div className="promo-home">
+          {!!promo && (
+            <>
+              <div>
+                <img src={promo.logo} className="promo-home__logo" />
+              </div>
+              <div>
+                {promo.text[0]}
+                <a
+                  href={promo.link.url}
+                  target="_blank"
+                  className="promo-home__link"
+                >
+                  {promo.link.text}
+                </a>
+                {promo.text[1]}
+              </div>
+            </>
+          )}
+        </div>
       </main>
 
       <footer>CC-BY 1994-2020 Joselito Júnior</footer>
