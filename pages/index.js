@@ -185,7 +185,7 @@ export default function Home() {
         .description {
           line-height: 1.618;
           font-size: 1.5rem;
-          margin: 2em 0 3rem;
+          margin: 2rem 1rem 3rem;
         }
 
         code {
@@ -239,6 +239,10 @@ export default function Home() {
           .grid {
             width: 100%;
             flex-direction: column;
+          }
+
+          .description {
+            text-align: left;
           }
         }
       `}</style>
