@@ -3,7 +3,7 @@ export const profile = {
     description: ``,
   },
   en: {
-    description: `I am a brazillian software engineer, consultant and public speaker. Currently at StoneCo as Tech Lead.  I love to travel, the web things and burritos.`,
+    description: `I am a brazillian software engineer, consultant and public speaker. Currently at StoneCo as Tech Lead. I love to travel, the web and burritos.`,
   },
 };
 
