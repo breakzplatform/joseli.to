@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from "next/head";
 
 export default function Home() {
   return (
@@ -11,14 +11,17 @@ export default function Home() {
 
       <main>
         <img src="/logo-white.svg" alt="Jose" className="logo" />
-        <code>$ npx <strong>joselito</strong> {/*--lang=pt-br*/}</code>
+        <code>
+          $ npx <strong>joselito</strong> {/*--lang=pt-br*/}
+        </code>
 
         <p className="description">
-        I am a software engineer, consultant, and public speaker currently based in Rio de Janeiro, Brazil. My interests range from technology to entrepreneurship. I love travelling, web development, and burritos.
+          I am a software engineer, consultant, and public speaker currently
+          based in Rio de Janeiro, Brazil. My interests range from technology to
+          entrepreneurship. I love travelling, web development, and burritos.
         </p>
 
-       {
-         /*
+        {/*
         <div className="grid">
           <a href="https://nextjs.org/docs" className="card">
             <h3>.dev &rarr;</h3>
@@ -33,23 +36,67 @@ export default function Home() {
             <p></p>
           </a>
         </div>
-        */
-       }
+        */}
 
         <ul className="social">
-          <li><a href="http://twitter.com/breakzplatorm" className="social__link" rel="noopnener">Twitter</a></li>
-          <li><a href="http://github.com/breakzplatorm" className="social__link" rel="noopnener">GitHub</a></li>
-          <li><a href="http://dev.to/joselito" className="social__link" rel="noopnener">DEV</a></li>
-          <li><a href="http://notes.jose" className="social__link" rel="noopnener">Hashnode</a></li>
-          <li><a href="http://twitter.com/breakzplatorm" className="social__link" rel="noopnener">Unsplashed</a></li>
-          <li><a href="http://twitter.com/breakzplatorm" className="social__link" rel="noopnener">PicPay</a></li>
+          <li>
+            <a
+              href="http://twitter.com/breakzplatorm"
+              className="social__link"
+              rel="noopnener"
+            >
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://github.com/breakzplatorm"
+              className="social__link"
+              rel="noopnener"
+            >
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://dev.to/joselito"
+              className="social__link"
+              rel="noopnener"
+            >
+              DEV
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://notes.joselito.dev"
+              className="social__link"
+              rel="noopnener"
+            >
+              Hashnode
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://unsplash.com/@breakzplatform"
+              className="social__link"
+              rel="noopnener"
+            >
+              Unsplash
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://picpay.me/joselitojunior"
+              className="social__link"
+              rel="noopnener"
+            >
+              PicPay
+            </a>
+          </li>
         </ul>
-
       </main>
 
-      <footer>
-        CC-BY 2010-2020 Joselito Júnior
-      </footer>
+      <footer>CC-BY 2010-2020 Joselito Júnior</footer>
 
       <style jsx>{`
         .container {
@@ -114,7 +161,7 @@ export default function Home() {
         }
 
         .title a {
-          color: #2D00F7;
+          color: #2d00f7;
           text-decoration: none;
         }
 
@@ -146,7 +193,7 @@ export default function Home() {
           border-radius: 5px;
           padding: 0.75rem;
           font-size: 1.1rem;
-          font-family: 'JetBrains Mono', monospace;
+          font-family: "JetBrains Mono", monospace;
         }
 
         .grid {
@@ -173,8 +220,8 @@ export default function Home() {
         .card:hover,
         .card:focus,
         .card:active {
-          color: #2D00F7;
-          border-color: #2D00F7;
+          color: #2d00f7;
+          border-color: #2d00f7;
         }
 
         .card h3 {
@@ -201,13 +248,13 @@ export default function Home() {
         body {
           padding: 0;
           margin: 0;
-          font-family: 'JetBrains Mono', monospace;
+          font-family: "JetBrains Mono", monospace;
         }
-        
+
         * {
           box-sizing: border-box;
         }
       `}</style>
     </div>
-  )
+  );
 }
