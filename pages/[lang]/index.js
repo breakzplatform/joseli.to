@@ -1,6 +1,17 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
+import { profile, cards, social, ads } from "../../data/content";
 
-export default function Home() {
+export default () => {
+  const router = useRouter();
+  const lang = router.query.lang;
+  const [promo, setPromo] = useState(null);
+
+  useEffect(() => {
+    setPromo(ads[lang][Math.floor(Math.random() * ads[lang].length)]);
+  }, []);
+
   return (
     <div className="container">
       <Head>
@@ -12,97 +23,76 @@ export default function Home() {
       <main>
         <img src="/logo-white.svg" alt="Jose" className="logo" />
         <code>
-          $ npx <strong>joselito</strong> {/*--lang=pt-br*/}
+          $ npx <strong>joselito</strong> {lang != "en" && `--lang=${lang}`}
         </code>
+        {!!profile[lang].description && (
+          <p className="description">{profile[lang].description}</p>
+        )}
 
-        <p className="description">
-          I am a software engineer, consultant, and public speaker currently
-          based in Rio de Janeiro, Brazil. My interests range from technology to
-          entrepreneurship. I love travelling, web development, and burritos.
-        </p>
-
-        {/*
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>.dev &rarr;</h3>
-            <p>.</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>.blog &rarr;</h3>
-            <p></p>
-          </a>
-        </div>
-        */}
+        {cards.enabled && cards[lang].length > 0 && (
+          <div className="grid">
+            {cards[lang].map((card) => {
+              return (
+                <a href={card.url} key={card.id} className="card">
+                  <h3>{card.title} &rarr;</h3>
+                  <p>{card.description}</p>
+                </a>
+              );
+            })}
+          </div>
+        )}
 
         <ul className="social">
-          <li>
-            <a
-              href="http://twitter.com/breakzplatorm"
-              className="social__link"
-              rel="noopnener"
-              target="_blank"
-            >
-              Twitter
-            </a>
-          </li>
-          <li>
-            <a
-              href="http://github.com/breakzplatorm"
-              className="social__link"
-              rel="noopnener"
-              target="_blank"
-            >
-              GitHub
-            </a>
-          </li>
-          <li>
-            <a
-              href="http://dev.to/joselito"
-              className="social__link"
-              rel="noopnener"
-              target="_blank"
-            >
-              DEV
-            </a>
-          </li>
-          <li>
-            <a
-              href="http://notes.joselito.dev"
-              className="social__link"
-              rel="noopnener"
-              target="_blank"
-            >
-              Hashnode
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://unsplash.com/@breakzplatform"
-              className="social__link"
-              rel="noopnener"
-              target="_blank"
-            >
-              Unsplash
-            </a>
-          </li>
-          <li>
-            <a
-              href="http://picpay.me/joselitojunior"
-              className="social__link"
-              rel="noopnener"
-              target="_blank"
-            >
-              PicPay
-            </a>
-          </li>
+          {social.default.map((item) => {
+            return (
+              <li key={item.title.toLowerCase()}>
+                <a
+                  href={item.url}
+                  className="social__link"
+                  rel="noopnener"
+                  target="_blank"
+                >
+                  {item.title}
+                </a>
+              </li>
+            );
+          })}
+          {social[lang].map((item) => {
+            return (
+              <li key={item.title.toLowerCase()}>
+                <a
+                  href={item.url}
+                  className="social__link"
+                  rel="noopnener"
+                  target="_blank"
+                >
+                  {item.title}
+                </a>
+              </li>
+            );
+          })}
         </ul>
+        {!!promo && (
+          <div className="promo-home">
+            <div>
+              <img src={promo.logo} className="promo-home__logo" />
+            </div>
+            <div>
+              {promo.text[0]}
+              <a
+                href={promo.link.url}
+                target="_blank"
+                className="promo-home__link"
+              >
+                {promo.link.text}
+              </a>
+              {promo.text[1]}
+            </div>
+          </div>
+        )}
       </main>
 
-      <footer>CC-BY 2010-2020 Joselito Júnior</footer>
+      <footer>CC-BY 1994-2020 Joselito Júnior</footer>
 
       <style jsx>{`
         .container {
@@ -140,6 +130,36 @@ export default function Home() {
 
         .social__link {
           border-bottom: 2px solid #000;
+        }
+
+        .promo-home {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          max-width: 468px;
+          height: 60px;
+          margin: 2rem 1rem;
+          font-size: 0.8rem;
+          color: gray;
+        }
+
+        .promo-home__logo {
+          margin-right: 1rem;
+          height: 32px;
+        }
+
+        .promo-home__link {
+          border-bottom: 2px solid gray;
+        }
+
+        .promo-home__info {
+          margin-top: 0.5rem;
+          padding: 0.25rem;
+          display: inline-block;
+          font-weight: 700;
+          font-size: 0.5rem;
+          background: gray;
+          color: white;
         }
 
         footer {
@@ -204,16 +224,15 @@ export default function Home() {
 
         .grid {
           display: flex;
-          align-items: center;
+          align-items: stretch;
           justify-content: center;
           flex-wrap: wrap;
-
-          max-width: 800px;
         }
 
         .card {
           margin: 1rem;
-          flex-basis: 45%;
+          flex-basis: calc(50% - 5rem);
+          width: calc(100% - 3rem);
           padding: 1.5rem;
           text-align: left;
           color: inherit;
@@ -237,8 +256,8 @@ export default function Home() {
 
         .card p {
           margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
+          font-size: 1rem;
+          line-height: 1.618;
         }
 
         @media (max-width: 600px) {
@@ -267,4 +286,4 @@ export default function Home() {
       `}</style>
     </div>
   );
-}
+};
