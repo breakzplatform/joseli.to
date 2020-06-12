@@ -44,6 +44,7 @@ export default function Home() {
               href="http://twitter.com/breakzplatorm"
               className="social__link"
               rel="noopnener"
+              target="_blank"
             >
               Twitter
             </a>
@@ -53,6 +54,7 @@ export default function Home() {
               href="http://github.com/breakzplatorm"
               className="social__link"
               rel="noopnener"
+              target="_blank"
             >
               GitHub
             </a>
@@ -62,6 +64,7 @@ export default function Home() {
               href="http://dev.to/joselito"
               className="social__link"
               rel="noopnener"
+              target="_blank"
             >
               DEV
             </a>
@@ -71,6 +74,7 @@ export default function Home() {
               href="http://notes.joselito.dev"
               className="social__link"
               rel="noopnener"
+              target="_blank"
             >
               Hashnode
             </a>
@@ -80,6 +84,7 @@ export default function Home() {
               href="https://unsplash.com/@breakzplatform"
               className="social__link"
               rel="noopnener"
+              target="_blank"
             >
               Unsplash
             </a>
@@ -89,6 +94,7 @@ export default function Home() {
               href="http://picpay.me/joselitojunior"
               className="social__link"
               rel="noopnener"
+              target="_blank"
             >
               PicPay
             </a>
