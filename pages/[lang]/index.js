@@ -147,6 +147,7 @@ export default () => {
 
         .promo-home__logo {
           margin-right: 1rem;
+          min-width: 32px;
           height: 32px;
         }
 
