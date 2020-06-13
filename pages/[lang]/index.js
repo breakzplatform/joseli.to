@@ -83,6 +83,7 @@ export default () => {
                 <a
                   href={promo.link.url}
                   target="_blank"
+                  rel="noopener"
                   className="promo-home__link"
                 >
                   {promo.link.text}
