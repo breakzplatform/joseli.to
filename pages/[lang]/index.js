@@ -16,6 +16,8 @@ export default () => {
     <div className="container">
       <Head>
         <title>Joselito Júnior</title>
+        <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+        <meta name="description" content={profile[lang].description} />
         <link rel="icon" href="/favicon.png" />
         <link rel="stylesheet" href="/mono.css" />
       </Head>
@@ -76,7 +78,11 @@ export default () => {
           {!!promo && (
             <>
               <div>
-                <img src={promo.logo} alt={promo.name} className="promo-home__logo" />
+                <img
+                  src={promo.logo}
+                  alt={promo.name}
+                  className="promo-home__logo"
+                />
               </div>
               <div>
                 {promo.text[0]}
