@@ -49,7 +49,7 @@ export default () => {
                 <a
                   href={item.url}
                   className="social__link"
-                  rel="noopnener"
+                  rel="noopener"
                   target="_blank"
                 >
                   {item.title}
@@ -63,7 +63,7 @@ export default () => {
                 <a
                   href={item.url}
                   className="social__link"
-                  rel="noopnener"
+                  rel="noopener"
                   target="_blank"
                 >
                   {item.title}
