@@ -76,7 +76,7 @@ export default () => {
           {!!promo && (
             <>
               <div>
-                <img src={promo.logo} className="promo-home__logo" />
+                <img src={promo.logo} alt={promo.name} className="promo-home__logo" />
               </div>
               <div>
                 {promo.text[0]}

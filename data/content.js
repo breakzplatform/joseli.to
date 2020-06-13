@@ -56,7 +56,7 @@ export const social = {
 export const ads = {
   pt: [
     {
-      id: "ton",
+      name: "Ton",
       logo: "/promo/ton.svg",
       link: {
         text: "escolha agora a sua",
@@ -68,7 +68,7 @@ export const ads = {
       ],
     },
     {
-      id: "brave",
+      name: "Brave",
       logo: "/promo/brave.svg",
       link: {
         text: "baixe o Brave",
@@ -80,7 +80,7 @@ export const ads = {
       ],
     },
     {
-      id: "picpay",
+      name: "PicPay",
       logo: "/promo/picpay.svg",
       link: {
         text: "Baixe agora",
@@ -92,7 +92,7 @@ export const ads = {
       ],
     },
     {
-      id: "digital-ocean",
+      name: "Digital Ocean",
       logo: "/promo/do.svg",
       link: {
         text: "Faça seu cadastro",
@@ -106,7 +106,7 @@ export const ads = {
   ],
   en: [
     {
-      id: "brave",
+      name: "Brave",
       logo: "/promo/brave.svg",
       link: {
         text: "Download the Brave Browser",
@@ -118,7 +118,7 @@ export const ads = {
       ],
     },
     {
-      id: "digital-ocean",
+      name: "Digital Ocean",
       logo: "/promo/do.svg",
       link: {
         text: "Sign up now",
