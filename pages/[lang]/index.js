@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
-import { profile, cards, social, ads } from "../../data/content";
+import { profile, cards, social, ads, footer } from "../../data/content";
 import Logo from "../../public/logo-white.svg";
 
 export default () => {
@@ -80,12 +80,8 @@ export default () => {
         <div className="promo-home">
           {!!promo && (
             <>
-              <div>
-                <img
-                  src={promo.logo}
-                  alt={promo.name}
-                  className="promo-home__logo"
-                />
+              <div className="promo-home__logo">
+                {promo.logo()}
               </div>
               <div>
                 {promo.text[0]}
@@ -104,7 +100,7 @@ export default () => {
         </div>
       </main>
 
-      <footer>CC-BY 1994-2020 Joselito Júnior</footer>
+      <footer>CC-BY 1994-2020 Joselito Júnior &middot; <a href={footer[lang].sourceLink.url}>{footer[lang].sourceLink.text}</a></footer>
 
       <style jsx>{`
         .container {
@@ -128,6 +124,7 @@ export default () => {
 
         .logo {
           margin: 0 0 1.75rem;
+          width: 225px;
         }
 
         .social {
@@ -157,8 +154,6 @@ export default () => {
 
         .promo-home__logo {
           margin-right: 1rem;
-          min-width: 32px;
-          height: 32px;
         }
 
         .promo-home__link {

@@ -1,9 +1,29 @@
+import Ton from '../public/promo/ton.svg';
+import Brave from '../public/promo/brave.svg';
+import PicPay from '../public/promo/picpay.svg';
+import DO from '../public/promo/do.svg';
+
 export const profile = {
   pt: {
     description: ``,
   },
   en: {
     description: `I am a brazillian software engineer, consultant and public speaker. Currently at StoneCo as Tech Lead. I love to travel, the web and burritos.`,
+  },
+};
+
+export const footer = {
+  pt: {
+    sourceLink: {
+      url: '',
+      text: ''
+    }
+  },
+  en: {
+    sourceLink: {
+      url: '',
+      text: ''
+    }
   },
 };
 
@@ -57,7 +77,7 @@ export const ads = {
   pt: [
     {
       name: "Ton",
-      logo: "/promo/ton.svg",
+      logo: () => <Ton height={32} width={32} />,
       link: {
         text: "escolha agora a sua",
         url: "https://ton.joseli.to",
@@ -69,7 +89,7 @@ export const ads = {
     },
     {
       name: "Brave",
-      logo: "/promo/brave.svg",
+      logo: () => <Brave height={32} width={32} />,
       link: {
         text: "baixe o Brave",
         url: "http://joselito.pw/brave",
@@ -81,7 +101,7 @@ export const ads = {
     },
     {
       name: "PicPay",
-      logo: "/promo/picpay.svg",
+      logo: () => <PicPay height={32} width={32} />,
       link: {
         text: "Baixe agora",
         url: "http://joselito.pw/picpay-521",
@@ -93,7 +113,7 @@ export const ads = {
     },
     {
       name: "Digital Ocean",
-      logo: "/promo/do.svg",
+      logo: () => <DO height={32} width={32} />,
       link: {
         text: "Faça seu cadastro",
         url: "http://joselito.pw/do",
@@ -107,7 +127,7 @@ export const ads = {
   en: [
     {
       name: "Brave",
-      logo: "/promo/brave.svg",
+      logo: () => <Brave height={32} width={32} />,
       link: {
         text: "Download the Brave Browser",
         url: "http://joselito.pw/brave",
@@ -119,7 +139,7 @@ export const ads = {
     },
     {
       name: "Digital Ocean",
-      logo: "/promo/do.svg",
+      logo: () => <DO height={32} width={32} />,
       link: {
         text: "Sign up now",
         url: "http://joselito.pw/do",
