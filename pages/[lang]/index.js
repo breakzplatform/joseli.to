@@ -142,7 +142,7 @@ export default () => {
           height: 60px;
           margin: 2rem 1rem;
           font-size: 0.8rem;
-          color: gray;
+          color: #757575;
         }
 
         .promo-home__logo {
@@ -152,7 +152,7 @@ export default () => {
         }
 
         .promo-home__link {
-          border-bottom: 2px solid gray;
+          border-bottom: 2px solid #757575;
         }
 
         .promo-home__info {
@@ -161,7 +161,7 @@ export default () => {
           display: inline-block;
           font-weight: 700;
           font-size: 0.5rem;
-          background: gray;
+          background: #757575;
           color: white;
         }
 
