@@ -99,7 +99,7 @@ export default () => {
       </main>
 
       <footer>
-        CC-BY 1994-2020 Joselito Júnior &middot;{" "}
+        CC-BY 1994-2020 Joselito Júnior &middot;&nbsp;
         <a
           href="https://github.com/breakzplatform/joseli.to"
           target="_blank"
