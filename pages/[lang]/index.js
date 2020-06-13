@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import { profile, cards, social, ads } from "../../data/content";
+import Logo from "../../public/logo-white.svg";
 
 export default () => {
   const router = useRouter();
@@ -23,7 +24,9 @@ export default () => {
       </Head>
 
       <main>
-        <img src="/logo-white.svg" alt="Jose" className="logo" />
+        <div className="logo">
+          <Logo alt="Jose" />
+        </div>
         <code>
           $ npx <strong>joselito</strong> {lang != "en" && `--lang=${lang}`}
         </code>
@@ -124,7 +127,7 @@ export default () => {
         }
 
         .logo {
-          margin: 0 0 2em;
+          margin: 0 0 1.75rem;
         }
 
         .social {
