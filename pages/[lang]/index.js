@@ -80,9 +80,7 @@ export default () => {
         <div className="promo-home">
           {!!promo && (
             <>
-              <div className="promo-home__logo">
-                {promo.logo()}
-              </div>
+              <div className="promo-home__logo">{promo.logo()}</div>
               <div>
                 {promo.text[0]}
                 <a
@@ -100,7 +98,16 @@ export default () => {
         </div>
       </main>
 
-      <footer>CC-BY 1994-2020 Joselito Júnior &middot; <a href={footer[lang].sourceLink.url}>{footer[lang].sourceLink.text}</a></footer>
+      <footer>
+        CC-BY 1994-2020 Joselito Júnior &middot;{" "}
+        <a
+          href="https://github.com/breakzplatform/joseli.to"
+          target="_blank"
+          rel="noopener"
+        >
+          {footer[lang].sourceLink.text}
+        </a>
+      </footer>
 
       <style jsx>{`
         .container {

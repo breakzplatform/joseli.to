@@ -15,14 +15,12 @@ export const profile = {
 export const footer = {
   pt: {
     sourceLink: {
-      url: '',
-      text: ''
+      text: 'Código Fonte'
     }
   },
   en: {
     sourceLink: {
-      url: '',
-      text: ''
+      text: 'View Source'
     }
   },
 };
