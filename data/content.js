@@ -84,11 +84,23 @@ export const ads = {
       logo: "/promo/picpay.svg",
       link: {
         text: "Baixe agora",
-        url: "http://joselito.pw/picpay-52Z1",
+        url: "http://joselito.pw/picpay-521",
       },
       text: [
         "Use o PicPay para pagar amigos, boletos, recarregar o celular e muito mais. Ao criar sua conta, insira o código  52Z1 e ganhe R$10 de volta. ",
         "!",
+      ],
+    },
+    {
+      id: "digital-ocean",
+      logo: "/promo/do.svg",
+      link: {
+        text: "Faça seu cadastro",
+        url: "http://joselito.pw/do",
+      },
+      text: [
+        "Ganhe $100 em créditos na DigitalOcean para experimentar uma cloud feita de developers para developers. ",
+        " agora!",
       ],
     },
   ],
@@ -103,6 +115,18 @@ export const ads = {
       text: [
         "Get unmatched speed, security and privacy by blocking trackers. ",
         " for free.",
+      ],
+    },
+    {
+      id: "digital-ocean",
+      logo: "/promo/do.svg",
+      link: {
+        text: "Sign up now",
+        url: "http://joselito.pw/do",
+      },
+      text: [
+        "Deploy your next app in seconds. Get $100 in cloud credits from Digital Ocean: ",
+        ".",
       ],
     },
   ],
