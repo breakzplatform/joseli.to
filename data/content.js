@@ -24,11 +24,11 @@ export const social = {
   default: [
     {
       title: "Twitter",
-      url: "http://twitter.com/breakzplatorm",
+      url: "http://twitter.com/breakzplatform",
     },
     {
       title: "GitHub",
-      url: "http://github.com/breakzplatorm",
+      url: "http://github.com/breakzplatform",
     },
     {
       title: "Unsplash",
