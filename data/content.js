@@ -5,10 +5,10 @@ import DO from '../public/promo/do.svg';
 
 export const profile = {
   pt: {
-    description: ``,
+    description: `Sou desenvolvedor front-end, consultor, professor e palestrante. Atualmente trabalho como Líder Técnico na Stone Pagamentos. Amo aviões, a web e burritos.`,
   },
   en: {
-    description: `I am a brazillian software engineer, consultant and public speaker. Currently at StoneCo as Tech Lead. I love to travel, the web and burritos.`,
+    description: `I am a brazillian software engineer, consultant, teacher and public speaker. Currently at StoneCo as Tech Lead. I love arplanes, the web and burritos.`,
   },
 };
 
