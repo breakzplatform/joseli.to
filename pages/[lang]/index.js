@@ -284,6 +284,17 @@ export default () => {
           .description {
             text-align: left;
           }
+
+          footer {
+            height: auto;
+            padding: 2rem 1rem;
+            text-align: left;
+            display: block;
+          }
+
+          footer  a {
+            display: inline-block;
+          }
         }
       `}</style>
 
