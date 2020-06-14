@@ -6,7 +6,7 @@ import Logo from "../../public/logo-white.svg";
 
 export default () => {
   const router = useRouter();
-  const lang = router.query.lang;
+  const lang = router.query.lang === "br" ? "pt" : router.query.lang;
   const [promo, setPromo] = useState(null);
 
   useEffect(() => {

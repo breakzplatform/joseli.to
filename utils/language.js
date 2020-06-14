@@ -1,16 +1,20 @@
 import Router from "next/router";
 export const fallbackLanguage = "en";
-export const languages = ["pt", "en"];
+export const languages = ["pt", "br", "en"];
 
 export const validateLanguage = (lang) => {
-    return languages.includes(lang) ? lang : fallbackLanguage;
+  return languages.includes(lang)
+    ? lang === "br"
+      ? "pt"
+      : lang
+    : fallbackLanguage;
 };
 
 export const isValidLanguage = (lang) => {
-    return languages.includes(lang);
+  return languages.includes(lang);
 };
 
-export const getLanguage = (lang, ctx) => {
+export const getLanguage = (lang) => {
   let language = lang.match(/[a-zA-Z\-]{2,10}/g)[0] || fallbackLanguage;
   language = language.split("-")[0];
 
