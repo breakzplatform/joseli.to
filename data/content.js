@@ -65,7 +65,7 @@ export const social = {
   ],
   en: [
     {
-      title: "BMC",
+      title: "Buy Me A Coffee",
       url: "http://joselito.pw/bmc",
     },
     {
