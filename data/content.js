@@ -52,18 +52,22 @@ export const social = {
       title: "Unsplash",
       url: "https://unsplash.com/@breakzplatform",
     },
-    {
-      title: "PicPay",
-      url: "http://picpay.me/joselitojunior",
-    },
   ],
   pt: [
+    {
+      title: "PicPay",
+      url: "http://joselito.pw/picpay",
+    },
     {
       title: "E-mail",
       url: "mailto:oi@joseli.to",
     },
   ],
   en: [
+    {
+      title: "BMC",
+      url: "http://joselito.pw/bmc",
+    },
     {
       title: "E-mail",
       url: "mailto:hey@joseli.to",
