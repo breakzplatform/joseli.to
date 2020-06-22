@@ -1,7 +1,7 @@
-import Ton from '../public/promo/ton.svg';
-import Brave from '../public/promo/brave.svg';
-import PicPay from '../public/promo/picpay.svg';
-import DO from '../public/promo/do.svg';
+import Ton from "../public/promo/ton.svg";
+import Brave from "../public/promo/brave.svg";
+import PicPay from "../public/promo/picpay.svg";
+import DO from "../public/promo/do.svg";
 
 export const profile = {
   pt: {
@@ -15,13 +15,13 @@ export const profile = {
 export const footer = {
   pt: {
     sourceLink: {
-      text: 'Código Fonte'
-    }
+      text: "Código Fonte",
+    },
   },
   en: {
     sourceLink: {
-      text: 'View Source'
-    }
+      text: "View Source",
+    },
   },
 };
 
@@ -39,7 +39,7 @@ export const cards = {
 };
 
 export const social = {
-  default: [
+  defaultStart: [
     {
       title: "Twitter",
       url: "http://twitter.com/breakzplatform",
@@ -58,19 +58,17 @@ export const social = {
       title: "PicPay",
       url: "http://joselito.pw/picpay",
     },
-    {
-      title: "E-mail",
-      url: "mailto:oi@joseli.to",
-    },
   ],
   en: [
     {
-      title: "Buy Me A Coffee",
+      title: "Ko-fi",
       url: "http://joselito.pw/bmc",
     },
+  ],
+  defaultEnd: [
     {
       title: "E-mail",
-      url: "mailto:hey@joseli.to",
+      url: "mailto:joselito@hey.com",
     },
   ],
 };

@@ -48,7 +48,7 @@ export default () => {
         )}
 
         <ul className="social">
-          {social.default.map((item) => {
+          {social.defaultStart.map((item) => {
             return (
               <li key={item.title.toLowerCase()}>
                 <a
@@ -63,6 +63,20 @@ export default () => {
             );
           })}
           {social[lang].map((item) => {
+            return (
+              <li key={item.title.toLowerCase()}>
+                <a
+                  href={item.url}
+                  className="social__link"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  {item.title}
+                </a>
+              </li>
+            );
+          })}
+          {social.defaultEnd.map((item) => {
             return (
               <li key={item.title.toLowerCase()}>
                 <a
@@ -292,7 +306,7 @@ export default () => {
             display: block;
           }
 
-          footer  a {
+          footer a {
             display: inline-block;
           }
         }
