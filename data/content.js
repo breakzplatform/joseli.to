@@ -8,7 +8,7 @@ export const profile = {
     description: `Sou desenvolvedor front-end, consultor, professor e palestrante. Atualmente trabalho como líder técnico na Sallve. Amo aviões, a web e burritos.`,
   },
   en: {
-    description: `I am a brazilian software engineer, consultant, teacher, and public speaker. Currently at Sallve as Tech Lead. I love airplanes, the web, and burritos.`,
+    description: `I am a brazilian software engineer, consultant, teacher, and public speaker. Currently at Sallve as a Tech Lead. I love airplanes, the web, and burritos.`,
   },
 };
 
@@ -88,18 +88,6 @@ export const ads = {
       ],
     },
     {
-      name: "Brave",
-      logo: () => <Brave height={32} width={32} />,
-      link: {
-        text: "baixe o Brave",
-        url: "http://joselito.pw/brave",
-      },
-      text: [
-        "Navegue na Web sem propagandas indesejáveis ou rastreadores, ",
-        " agora mesmo.",
-      ],
-    },
-    {
       name: "PicPay",
       logo: () => <PicPay height={32} width={32} />,
       link: {
@@ -107,7 +95,7 @@ export const ads = {
         url: "http://joselito.pw/picpay-521",
       },
       text: [
-        "Use o PicPay para pagar amigos, boletos, recarregar o celular e muito mais. Ao criar sua conta, insira o código  52Z1 e ganhe R$10 de volta. ",
+        "Use o PicPay para pagar amigos, boletos, recarregar o celular e muito mais. Ao criar sua conta, insira o código 52Z1 e ganhe R$10 de volta. ",
         "!",
       ],
     },
@@ -125,18 +113,6 @@ export const ads = {
     },
   ],
   en: [
-    {
-      name: "Brave",
-      logo: () => <Brave height={32} width={32} />,
-      link: {
-        text: "Download the Brave Browser",
-        url: "http://joselito.pw/brave",
-      },
-      text: [
-        "Get unmatched speed, security and privacy by blocking trackers. ",
-        " for free.",
-      ],
-    },
     {
       name: "Digital Ocean",
       logo: () => <DO height={32} width={32} />,
