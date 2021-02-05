@@ -68,25 +68,13 @@ export const social = {
   defaultEnd: [
     {
       title: "E-mail",
-      url: "mailto:joselito@hey.com",
+      url: "mailto:joseli.to@joseli.to",
     },
   ],
 };
 
 export const ads = {
   pt: [
-    {
-      name: "Ton",
-      logo: () => <Ton height={32} width={32} />,
-      link: {
-        text: "escolha agora a sua",
-        url: "https://ton.joseli.to",
-      },
-      text: [
-        "Da Stone para o Autônomo. Melhor serviço e melhor maquininha, ",
-        ".",
-      ],
-    },
     {
       name: "PicPay",
       logo: () => <PicPay height={32} width={32} />,
