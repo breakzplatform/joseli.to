@@ -53,7 +53,7 @@ export default () => {
                 <a
                   href={item.url}
                   className="social__link"
-                  rel="noopener"
+                  rel="me"
                   target="_blank"
                 >
                   {item.title}
