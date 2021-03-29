@@ -10,4 +10,12 @@ module.exports = {
 
     return config;
   },
+  rewrites() {
+    return [
+      {
+        source: '/pt',
+        destination: `https://joseli.to/pt`,
+      },
+    ]
+  },
 };
