@@ -1,25 +1,25 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { useState, useEffect } from "react";
-import { profile, cards, social, ads, footer } from "../../data/content";
+import { profile, cards, social, footer } from "../../data/content";
 
 export default () => {
   const router = useRouter();
   const lang = router.query.lang === "br" ? "pt" : router.query.lang;
-  const [promo, setPromo] = useState(null);
-
-  useEffect(() => {
-    setPromo(ads[lang][Math.floor(Math.random() * ads[lang].length)]);
-  }, []);
 
   return (
     <div className="container">
       <Head>
-        <title>Joselito Júnior</title>
-        <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+        <title>{profile[lang].title}</title>
         <meta name="description" content={profile[lang].description} />
         <link rel="icon" href="/favicon.png" />
-        <link rel="stylesheet" href="/mono.css" />
+        <link href="https://joseli.to/pt/assets/iosevka-webfont/iosevka.css" rel="preload" as="style" onLoad="this.rel='stylesheet'; this.onload=null;"></link>
+        {lang === "pt" && <>
+          <link rel="alternate" type="application/atom+xml" title="Joseli.to — Tudo" href="https://feeds.feedburner.com/joselito_pt" />
+          <link rel="alternate" type="application/atom+xml" title="Joseli.to — Notinhas" href="https://feeds.feedburner.com/joselito_notinhas" />
+          <link rel="alternate" type="application/atom+xml" title="Joseli.to — Newsletter" href="https://feeds.feedburner.com/joselito_newsletter" />
+          <link rel="alternate" type="application/atom+xml" title="Joseli.to — Artigos" href="https://feeds.feedburner.com/joselito_artigos" />
+          <link rel="alternate" type="application/atom+xml" title="Joseli.to — Desenvolvimento" href="https://feeds.feedburner.com/joselito_desenvolvimento" />
+        </>}
       </Head>
 
       <main>
@@ -90,35 +90,19 @@ export default () => {
             );
           })}
         </ul>
-        <div className="promo-home">
-          {!!promo && (
-            <>
-              <div className="promo-home__logo">{promo.logo()}</div>
-              <div>
-                {promo.text[0]}
-                <a
-                  href={promo.link.url}
-                  target="_blank"
-                  rel="noopener"
-                  className="promo-home__link"
-                >
-                  {promo.link.text}
-                </a>
-                {promo.text[1]}
-              </div>
-            </>
-          )}
-        </div>
       </main>
 
       <footer>
-        CC-BY 1994-2020 Joselito Júnior &middot;&nbsp;
+        CC-BY-SA 2010-{(new Date()).getUTCFullYear()} Joselito &middot;&nbsp;
         <a
-          href="https://github.com/breakzplatform/joseli.to"
+          href="https://github.com/breakzplatform/hello"
           target="_blank"
           rel="noopener"
         >
-          {footer[lang].sourceLink.text}
+        {footer[lang].sourceLink.text}</a>
+        &nbsp;&middot;&nbsp;
+        <a href={footer[lang].alternateEmoji.link}>
+        {footer[lang].alternateEmoji.text}
         </a>
       </footer>
 
@@ -139,7 +123,7 @@ export default () => {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          max-width: 800px;
+          max-width: 720px;
         }
 
         .logo img {
@@ -247,7 +231,7 @@ export default () => {
           border-radius: 5px;
           padding: 0.75rem;
           font-size: 1.1rem;
-          font-family: "JetBrains Mono", monospace;
+          font-family: 'Iosevka Web',ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace;
         }
 
         .grid {
@@ -316,7 +300,7 @@ export default () => {
         body {
           padding: 0;
           margin: 0;
-          font-family: "JetBrains Mono", monospace;
+          font-family: 'Iosevka Web',ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace;
         }
 
         * {
