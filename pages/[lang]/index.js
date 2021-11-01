@@ -37,7 +37,7 @@ export default () => {
           <div className="grid">
             {cards[lang].map((card) => {
               return (
-                <a href={card.url} key={card.id} className="card">
+                <a href={card.url} key={card.id} rel="noopener noreferrer" className="card">
                   <h3>{card.title} &rarr;</h3>
                   <p>{card.description}</p>
                 </a>
@@ -55,6 +55,7 @@ export default () => {
                   className="social__link"
                   rel="me"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {item.title}
                 </a>
@@ -67,7 +68,7 @@ export default () => {
                 <a
                   href={item.url}
                   className="social__link"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   {item.title}
@@ -81,7 +82,7 @@ export default () => {
                 <a
                   href={item.url}
                   className="social__link"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   {item.title}
@@ -97,7 +98,7 @@ export default () => {
         <a
           href="https://github.com/breakzplatform/hello"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
         {footer[lang].sourceLink.text}</a>
         &nbsp;&middot;&nbsp;
