@@ -18,37 +18,6 @@ const Site = ({ recordMap }) => (
       >Next.js</a>
     </footer>
     <style global jsx>{`
-    * {
-      box-sizing: border-box;
-    }
-
-    .notion-blank { display: none; }
-
-    body {
-      margin: 0 1rem;
-      background: fixed linear-gradient(0deg, #D7F5EF, #9480FF);
-      font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-    }
-    
-    a, a:link, a:visited {
-      text-decoration: none;
-      color: #694DFF;
-    }
-
-      .wrapper {
-        max-width: 480px;
-        margin: 0 auto;
-      }
-
-      .logo {
-        text-align: center;
-      }
-
-      .logo img {
-        max-width: 12rem;
-        margin: 4rem auto 1rem;
-      }
-      
       /* code block */
       .notion-block-2a985d0d3aeb4f66aa20389f8d4f7546 {
         margin: 1rem auto;
@@ -62,27 +31,8 @@ const Site = ({ recordMap }) => (
       .notion-block-2a985d0d3aeb4f66aa20389f8d4f7546 code {
         font-size: 1.5rem;
         font-family: 'Iosevka', monospace;
-        color: #FF7698;
+        color: #CA3050;
       }
-
-      /* site e  newsletter */
-      .notion-callout {
-        display: flex;
-        padding: 1rem;
-        background: #fff;
-        border: 1px solid black;
-        box-shadow: 4px 4px black;
-        margin-bottom: 1rem;
-      }
-
-      .notion-callout .notion-page-icon {
-        margin-right: .5rem;
-      }
-
-      .notion-callout a:nth-child(n+2) {
-        color: black;
-      }
-
 
       .notion-block-ce69738b24154e2bb08279a1771905e8 {
         align-items: center;
@@ -90,23 +40,21 @@ const Site = ({ recordMap }) => (
 
       .notion-block-ce69738b24154e2bb08279a1771905e8 .notion-page-icon {
         margin-right: 2rem;
+        width: 100px;
+        height: 106.58px;
       }
 
       .notion-block-ce69738b24154e2bb08279a1771905e8 img {
-        max-width: 100px;
+        width: 100px;
+        height: 106.58px;
       }
-      
+
       /* links */
       .notion-block-2f8c236232cd419f97bbf7560cb7b551 {
         display: flex;
         justify-content: space-between;
         margin: 2rem;
         font-weight: bold;
-      }
-
-      footer {
-        text-align: center;
-        font-size: .75rem;
       }
     `}</style>
   </>

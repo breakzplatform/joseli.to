@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
 
     <div className="wrapper">
       <div className="logo">
-        <img src="/logo.png" alt="Joselito" />
+        <img src="/logo.png" width="192" height="157.17" alt="Joselito" />
       </div>
       <Component {...pageProps} />
     </div>

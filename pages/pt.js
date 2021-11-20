@@ -23,7 +23,7 @@ const Site = ({ recordMap }) => (
       .notion-block-d4cfb10efc804a91868b55d310c67a22 code {
         font-size: 1.5rem;
         font-family: 'Iosevka', monospace;
-        color: #FF7698;
+        color: #CA3050;
       }
 
       /* description */
@@ -33,10 +33,13 @@ const Site = ({ recordMap }) => (
 
       .notion-block-5aacc68e66414824b27d90e8b37ecd97 .notion-page-icon {
         margin-right: 2rem;
+        width: 100px;
+        height: 106.58px;
       }
 
       .notion-block-5aacc68e66414824b27d90e8b37ecd97 img {
-        max-width: 100px;
+        width: 100px;
+        height: 106.58px;
       }
 
       /* links */
