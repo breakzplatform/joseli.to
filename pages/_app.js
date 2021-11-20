@@ -1,17 +1,21 @@
-import { configureLanguage } from "../utils/language";
+import Head from 'next/head'
+import '../styles/globals.css'
 
-const App = props => {
-  const { Component, pageProps } = props;
+function MyApp({ Component, pageProps }) {
+  return <>
+    <Head>
+      <title>Joselito</title>
+      <link rel="icon" href="/favicon.png" />
+      <link href="https://joselito.page/assets/iosevka-webfont/iosevka.css" rel="preload" as="style" onLoad="this.rel='stylesheet'; this.onload=null;" />
+    </Head>
 
-  return <Component {...pageProps} />;
-};
+    <div className="wrapper">
+      <div className="logo">
+        <img src="/logo.png" alt="Joselito" />
+      </div>
+      <Component {...pageProps} />
+    </div>
+  </>
+}
 
-App.getInitialProps = async ({ ctx }) => {
-  const language = configureLanguage(ctx);
-
-  return {
-    language
-  };
-};
-
-export default App;
+export default MyApp

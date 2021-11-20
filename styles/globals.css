@@ -1,0 +1,54 @@
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .notion-blank { display: none; }
+
+    body {
+      margin: 0 1rem;
+      background: fixed linear-gradient(0deg, #D7F5EF, #9480FF);
+      font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+    }
+    
+    a, a:link, a:visited {
+      text-decoration: none;
+      color: #694DFF;
+    }
+
+      .wrapper {
+        max-width: 480px;
+        margin: 0 auto;
+      }
+
+      .logo {
+        text-align: center;
+      }
+
+      .logo img {
+        max-width: 12rem;
+        margin: 4rem auto 1rem;
+      }
+
+      footer {
+        text-align: center;
+        font-size: .75rem;
+        margin-bottom: 2rem;
+      }
+
+      .notion-callout {
+        display: flex;
+        padding: 1rem;
+        background: #fff;
+        border: 1px solid black;
+        box-shadow: 4px 4px black;
+        margin-bottom: 1rem;
+      }
+
+      .notion-callout .notion-page-icon {
+        margin-right: .5rem;
+      }
+
+      .notion-callout a:nth-child(n+2) {
+        color: black;
+      }
