@@ -41,12 +41,7 @@ const Site = ({ recordMap }) => (
       .notion-block-ce69738b24154e2bb08279a1771905e8 .notion-page-icon {
         margin-right: 2rem;
         width: 100px;
-        height: 106.58px;
-      }
-
-      .notion-block-ce69738b24154e2bb08279a1771905e8 img {
-        width: 100px;
-        height: 106.58px;
+        height: 106.5px;
       }
 
       /* links */

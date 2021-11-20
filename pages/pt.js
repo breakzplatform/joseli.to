@@ -1,10 +1,14 @@
 import { NotionAPI } from 'notion-client'
 import { NotionRenderer } from 'react-notion-x'
+import Head from 'next/head'
 
 const notion = new NotionAPI()
 
 const Site = ({ recordMap }) => (
   <>
+    <Head>
+      <html lang="pt-BR" />
+    </Head>
     <NotionRenderer recordMap={recordMap} fullPage={false} darkMode={true} />
     <footer>
       CC-BY-SA 2010-{(new Date()).getUTCFullYear()} Joselito &middot; Feito com <a href="https://joselito.notion.site/joseli-to-pt-fbaa0d2115194e4982903025f75e2342" target="_blank" rel="noopener noreferrer">Notion</a> e <a href="https://github.com/breakzplatform/hello" target="_blank" rel="noopener noreferrer">Next.js</a>
@@ -34,12 +38,7 @@ const Site = ({ recordMap }) => (
       .notion-block-5aacc68e66414824b27d90e8b37ecd97 .notion-page-icon {
         margin-right: 2rem;
         width: 100px;
-        height: 106.58px;
-      }
-
-      .notion-block-5aacc68e66414824b27d90e8b37ecd97 img {
-        width: 100px;
-        height: 106.58px;
+        height: 106.5px;
       }
 
       /* links */

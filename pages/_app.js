@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import '../styles/globals.css'
 
-function MyApp({ Component, pageProps }) {
+function Jose({ Component, pageProps }) {
   return <>
     <Head>
+      <html lang="en-US" />
       <title>Joselito</title>
       <link rel="icon" href="/favicon.png" />
       <link href="https://joselito.page/assets/iosevka-webfont/iosevka.css" rel="preload" as="style" onLoad="this.rel='stylesheet'; this.onload=null;" />
@@ -18,4 +19,4 @@ function MyApp({ Component, pageProps }) {
   </>
 }
 
-export default MyApp
+export default Jose
