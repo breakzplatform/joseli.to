@@ -9,7 +9,6 @@ body {
 }
 
 body {
-    margin: 0 1rem;
     background: fixed linear-gradient(0deg, #D7F5EF, #9480FF);
     font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
 }
@@ -22,8 +21,10 @@ a:visited {
 }
 
 .wrapper {
-    max-width: 480px;
+    width: 100%;
+    max-width: calc(480px + 2rem);
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .logo {

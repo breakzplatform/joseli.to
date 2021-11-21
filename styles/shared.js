@@ -7,7 +7,7 @@ const notionCodeBlockDivStyles = `margin: 1rem auto;
 
 const notionCodeBlockCodeStyles = `
         font-size: 1.5rem;
-        font-family: 'Iosevka', monospace;
+        font-family: 'Iosevka', 'Iosevka Web', monospace;
         color: #CA3050;`
         
 const notionDescriptionStyles = `
@@ -21,7 +21,7 @@ const notionPageIconStyles = `
 const notionLinksBlockStyles = `
         display: flex;
         justify-content: space-between;
-        margin: 2rem;
+        margin: 2rem 1.5rem;
         font-weight: bold;`
 
 export { notionCodeBlockDivStyles, notionCodeBlockCodeStyles, notionDescriptionStyles, notionPageIconStyles, notionLinksBlockStyles }
