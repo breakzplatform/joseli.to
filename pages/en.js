@@ -1,10 +1,16 @@
 import { NotionAPI } from 'notion-client'
 import { NotionRenderer } from 'react-notion-x'
+import Head from 'next/head'
+
+import { notionCodeBlockDivStyles, notionCodeBlockCodeStyles, notionDescriptionStyles, notionPageIconStyles, notionLinksBlockStyles } from '../styles/shared.js';
 
 const notion = new NotionAPI()
 
 const Site = ({ recordMap }) => (
   <>
+    <Head>
+      <html lang="en-US" />
+    </Head>
     <NotionRenderer recordMap={recordMap} fullPage={false} darkMode={true} />
     <footer>
       CC-BY-SA 2010-{(new Date()).getUTCFullYear()} Joselito &middot; Powered by <a
@@ -18,38 +24,27 @@ const Site = ({ recordMap }) => (
       >Next.js</a>
     </footer>
     <style global jsx>{`
-      /* code block */
-      .notion-block-2a985d0d3aeb4f66aa20389f8d4f7546 {
-        margin: 1rem auto;
-        text-align: center;
-        background: #fff;
-        border: 1px solid black;
-        box-shadow: 4px 4px black;
-        padding: 1rem;
+      // npm card
+      .notion-text.notion-block-2a985d0d3aeb4f66aa20389f8d4f7546 {
+        ${notionCodeBlockDivStyles}
       }
 
-      .notion-block-2a985d0d3aeb4f66aa20389f8d4f7546 code {
-        font-size: 1.5rem;
-        font-family: 'Iosevka', monospace;
-        color: #CA3050;
+      .notion-text.notion-block-2a985d0d3aeb4f66aa20389f8d4f7546 code {
+        ${notionCodeBlockCodeStyles}
       }
 
-      .notion-block-ce69738b24154e2bb08279a1771905e8 {
-        align-items: center;
+      // description
+      .notion-callout.notion-block-ce69738b24154e2bb08279a1771905e8 {
+        ${notionDescriptionStyles}
       }
 
-      .notion-block-ce69738b24154e2bb08279a1771905e8 .notion-page-icon {
-        margin-right: 2rem;
-        width: 100px;
-        height: 106.5px;
+      .notion-callout.notion-block-ce69738b24154e2bb08279a1771905e8 .notion-page-icon {
+        ${notionPageIconStyles}
       }
 
-      /* links */
+      // links
       .notion-block-2f8c236232cd419f97bbf7560cb7b551 {
-        display: flex;
-        justify-content: space-between;
-        margin: 2rem;
-        font-weight: bold;
+        ${notionLinksBlockStyles}
       }
     `}</style>
   </>

@@ -4,9 +4,8 @@ import '../styles/globals.css'
 function Jose({ Component, pageProps }) {
   return <>
     <Head>
-      <html lang="en-US" />
       <title>Joselito</title>
-      <link rel="icon" href="/favicon.png" />
+      <link rel="shortcut icon" href="https://joseli.to/favicon.png" type="image/png" />
       <link href="https://joselito.page/assets/iosevka-webfont/iosevka.css" rel="preload" as="style" onLoad="this.rel='stylesheet'; this.onload=null;" />
     </Head>
 
