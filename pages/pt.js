@@ -13,7 +13,7 @@ const Site = ({ recordMap }) => (
     </Head>
     <NotionRenderer recordMap={recordMap} fullPage={false} darkMode={true} />
     <footer>
-      CC-BY-SA 2010-{(new Date()).getUTCFullYear()} Joselito &middot; Feito com <a href="https://joselito.notion.site/joseli-to-pt-fbaa0d2115194e4982903025f75e2342" target="_blank" rel="noopener noreferrer">Notion</a> e <a href="https://github.com/breakzplatform/hello" target="_blank" rel="noopener noreferrer">Next.js</a>
+      CC BY-SA 2010-{(new Date()).getUTCFullYear()} Joselito &middot; Feito com <a href="https://joselito.notion.site/joseli-to-pt-fbaa0d2115194e4982903025f75e2342" target="_blank" rel="noopener noreferrer">Notion</a> e <a href="https://github.com/breakzplatform/joseli.to" target="_blank" rel="noopener noreferrer">Next.js</a>
     </footer>
     <style global jsx>{`
       // npm card

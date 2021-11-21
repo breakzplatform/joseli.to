@@ -6,6 +6,7 @@ function Jose({ Component, pageProps }) {
     <Head>
       <title>Joselito</title>
       <link rel="shortcut icon" href="https://joseli.to/favicon.png" type="image/png" />
+      <meta name="theme-color" content="#9480FF" />
       <link href="https://joselito.page/assets/iosevka-webfont/iosevka.css" rel="preload" as="style" onLoad="this.rel='stylesheet'; this.onload=null;" />
     </Head>
 

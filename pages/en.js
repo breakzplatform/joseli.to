@@ -13,12 +13,12 @@ const Site = ({ recordMap }) => (
     </Head>
     <NotionRenderer recordMap={recordMap} fullPage={false} darkMode={true} />
     <footer>
-      CC-BY-SA 2010-{(new Date()).getUTCFullYear()} Joselito &middot; Powered by <a
+      CC BY-SA 2010-{(new Date()).getUTCFullYear()} Joselito &middot; Powered by <a
         href="https://joselito.notion.site/joseli-to-en-4db6addcb23041839bef5983fcb1f134"
         target="_blank"
         rel="noopener noreferrer"
       >Notion</a> and <a
-        href="https://github.com/breakzplatform/hello"
+        href="https://github.com/breakzplatform/joseli.to"
         target="_blank"
         rel="noopener noreferrer"
       >Next.js</a>

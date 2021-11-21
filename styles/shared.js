@@ -9,7 +9,7 @@ const notionCodeBlockCodeStyles = `
         font-size: 1.5rem;
         font-family: 'Iosevka', 'Iosevka Web', monospace;
         color: #CA3050;`
-        
+
 const notionDescriptionStyles = `
         align-items: center`
 
