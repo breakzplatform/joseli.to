@@ -1,4 +1,5 @@
-const notionCodeBlockDivStyles = `margin: 1rem auto;
+const notionCodeBlockDivStyles = `
+        margin: 1rem auto;
         text-align: center;
         background: #fff;
         border: 1px solid black;
@@ -11,9 +12,11 @@ const notionCodeBlockCodeStyles = `
         color: #CA3050;`
 
 const notionDescriptionStyles = `
+        min-height: 142px;
         align-items: center`
 
 const notionPageIconStyles = `
+        display: block;
         margin-right: 2rem;
         width: 100px;
         height: 106.5px;`
