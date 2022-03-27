@@ -1,0 +1,54 @@
+{
+    "pt": [
+        {
+            "name": "Twitter",
+            "link": "https://twitter.com/breakzplatform"
+        },
+        {
+            "name": "GitHub",
+            "link": "https://github.com/breakzplatform"
+        },
+        {
+            "name": "Unsplash",
+            "link": "https://unsplash.com/@breakzplatform"
+        },
+        {
+            "name": "Raindrop.io",
+            "link": "https://raindrop.io/breakzplatform"
+        },
+        {
+            "name": "Pix",
+            "link": "https://pix.joseli.to"
+        },
+        {
+            "name": "E-mail",
+            "link": "mailto:eu@joseli.to"
+        }
+    ],
+    "en": [
+        {
+            "name": "Twitter",
+            "link": "https://twitter.com/breakzplatform"
+        },
+        {
+            "name": "GitHub",
+            "link": "https://github.com/breakzplatform"
+        },
+        {
+            "name": "Unsplash",
+            "link": "https://unsplash.com/@breakzplatform"
+        },
+        {
+            "name": "Raindrop.io",
+            "link": "https://raindrop.io/breakzplatform"
+        },
+        {
+            "name": "Ko-fi",
+            "link": "http://joselito.pw/bmc"
+        },
+        {
+            "name": "E-mail",
+            "link": "mailto:eu@joseli.to"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+---
+layout: layouts/base.njk
+---
+<span class="post">
+    <h1 class="text-3xl">{{title}}</h1>
+    <time>{{ date | readableDate }}</time>
+    <article>{{ content | safe }}</article>
+</span>

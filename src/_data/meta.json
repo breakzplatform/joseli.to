@@ -1,0 +1,25 @@
+{
+  "en": {
+    "footer": {
+      "cc": {
+        "link": "https://creativecommons.org/licenses/by-sa/3.0/"
+      },
+      "source": "View Source",
+      "made": "Made with 11ty"
+    }
+  },
+  "pt": {
+    "ad": {
+      "link": "https://amzn.to/2Yca559",
+      "image": "https://static.joseli.to/joseli.to/promo/XCM_Manual_2148x588_1221939_1156923_version_q_b591616a_afc4_43a8_a4b2_e691df34cc31_jpg.jpg",
+      "alt": "Anúncio: Teste grátis por 30 dias o Amazon Prime"
+    },
+    "footer": {
+      "cc": {
+        "link": "https://creativecommons.org/licenses/by-sa/3.0/deed.pt_BR"
+      },
+      "source": "Código-fonte",
+      "made": "Feito com 11ty"
+    }
+  }
+}

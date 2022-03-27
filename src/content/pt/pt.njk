@@ -1,0 +1,47 @@
+---
+title: "Joselito · Faço sites e empodero comunidades de TI"
+layout: layouts/index.njk
+---
+{% set notinhas = collections.notinhas %}
+{% set posts = collections.posts %}
+
+<div class="p-12 bg-pure-purple-700">
+    <h1 class="uppercase text-sm font-black mb-2">Sobre</h1>
+    <div class="flex">
+        <p>Sou desenvolvedor front-end, consultor, instrutor e palestrante. Atualmente trabalho como <strong>Community Manager</strong> na <a href="#" class="font-bold underline decoration-pure-purple-500 underline-offset-2">Turing.com</a>. Amo aviões, a web e temakis.</p>
+        {% include "../../_includes/components/avatar.njk" %}
+    </div>
+</div>
+
+{# <div class="p-12 bg-pure-purple-600">
+            <div class="mb-8">
+                <a href="{{ '/notinhas/' | url }}">
+                    <h1 class="uppercase text-sm font-black mb-2">Notinhas</h1>
+                </a>
+                <ul class="list-none">
+                    {% for post in notinhas | reverse %}
+                        <li>
+                            <strong>
+                                <a href="{{ post.url | url }}" class="underline decoration-dotted underline-offset-2 text-xl">{{ post.data.title }}</a>
+                            </strong>
+                            <time class="text-xs" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div>
+                <h1 class="uppercase text-sm font-black mb-2">Artigos</h1>
+                <ul class="list-none">
+                    {% for post in posts | reverse%}
+                        {% if (loop.index <= 3) %}
+                            <li>
+                                <strong>
+                                    <a href="{{ post.url | url }}" class="underline decoration-dotted underline-offset-2 text-xl">{{ post.data.title }}</a>
+                                </strong>
+                                <time class="text-xs" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div> #}

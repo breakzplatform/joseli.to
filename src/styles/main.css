@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+.npx::before {
+    content: "$ ";
+}
+
+.post p,
+.post pre {
+    @apply mb-4;
+}

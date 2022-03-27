@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="{{ locale }}">
+  <head>
+    <title>{{ title }}</title>
+    {% include "../shared/head.njk" %}
+  </head>
+  <body class="bg-pure-purple-900 text-pure-purple-50">
+    <main class="max-w-xl mx-auto">
+      <div class="p-8 sm:p-12"><img src="/assets/logo.png" width="192" height="157.17" alt="Joselito" class="mx-auto"></div>
+      <div class="md:rounded-lg overflow-hidden shadow-lg">
+        <div class="p-8 sm:p-12 text-center bg-pure-purple-800">
+          <pre class="text-xl sm:text-3xl npx font-mono select-all">npx joselito{% if locale != 'en' %} --lang={{ locale }}{% endif %}</pre>
+        </div>
+        {{ content | safe }}
+        <div class="p-8 sm:p-12 bg-pure-purple-500">
+          {% for item in linktree[locale] %}
+            {% if loop.first %}
+              <ul>
+              {% endif %}
+              <li>
+                <a target="_blank" rel="noopener noreferrer" class="block font-bold drop-shadow-xl bg-pure-purple-900 hover:bg-pure-purple-800 shadow-inner rounded-full px-4 py-2 {% if not loop.last %} mb-4 {% endif %} border-2 border-transparent" href="{{ item.link }}">{{ item.name }}</a>
+              </li>
+              {% if loop.last %}
+              </ul>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <div>
+          {% if meta[locale]["ad"] %}
+            <a href="{{ meta[locale]['ad']['link'] }}">
+              <img loading="lazy" alt="{{ meta[locale]['ad']['alt'] }}" src="{{ meta[locale]['ad']['image'] }}" />
+            </a>
+          {% endif %}
+        </div>
+      </div>
+      <div class="p-8 sm:p-12 text-center text-xs">
+        <p><a target="_blank" rel="noopener noreferrer" class="underline decoration-pure-purple-500 underline-offset-2" href="{{ meta[locale]['footer']['cc']['link'] }}">CC BY-SA</a> 2010-{% currentYear %} Joselito · <a target="_blank" class="underline decoration-pure-purple-500 underline-offset-2" rel="noopener noreferrer" href="https://11ty.dev/">{{ meta[locale]["footer"]["made"] }}</a> · <a target="_blank" rel="noopener noreferrer" class="underline decoration-pure-purple-500 underline-offset-2" href="https://github.com/breakzplatform/joseli.to">{{ meta[locale]["footer"]["source"] }}</a>
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

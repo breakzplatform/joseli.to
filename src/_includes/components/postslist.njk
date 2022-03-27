@@ -1,0 +1,11 @@
+<ul>
+  {% for post in postslist %}
+    <li>
+      <strong>
+        <a href="{{ post.url | url }}" class="underline decoration-dotted underline-offset-4 text-xl">{{ post.data.title }}</a>
+      </strong>
+      <time class="text-xs" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+      <span>{{ post.data.description }}</span>
+    </li>
+  {% endfor %}
+</ul>
