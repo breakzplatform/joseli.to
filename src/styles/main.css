@@ -7,17 +7,19 @@
     content: "$ ";
 }
 
-.post p,
-.post pre {
-    @apply mb-4;
-}
-
-.post a[href^="https://"]::after {
-    @apply text-pure-purple-900;
-    content: "↗";
-    font-family: system-ui,-apple-system,sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    padding-left: 2px;
-    line-height: .75;
+@layer utilities {
+    .post p,
+    .post pre {
+        @apply mb-4;
+    }
+    
+    .internal main a[href^="https://"]::after {
+        content: "↗";
+        font-family: system-ui,-apple-system,sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        padding-left: 2px;
+        line-height: .75;
+        color: theme('colors.pure-purple.900');
+    }
 }
