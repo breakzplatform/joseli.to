@@ -12,12 +12,12 @@
     @apply mb-4;
 }
 
-a[href^="https://"]::after {
+.post a[href^="https://"]::after {
+    @apply text-purple-900;
     content: "↗";
     font-family: system-ui,-apple-system,sans-serif;
     font-style: normal;
     font-weight: 900;
-    color: #00bcd4;
     padding-left: 2px;
     line-height: .75;
 }
