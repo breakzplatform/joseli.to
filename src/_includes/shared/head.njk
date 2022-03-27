@@ -1,11 +1,22 @@
-<link rel="stylesheet" type="text/css" href="https://joseli.to/assets/main.css"/>
-<meta name="viewport" content="width=device-width"/>
+<title>{{ title }}</title>
 <meta charSet="utf-8"/>
-<link rel="shortcut icon" href="https://joseli.to/assets/favicon.png" type="image/png"/>
 <meta name="theme-color" content="#652585"/>
+<meta name="viewport" content="width=device-width"/>
+<link rel="stylesheet" type="text/css" href="https://joseli.to/assets/main.css"/>
+<link rel="shortcut icon" href="https://joseli.to/assets/favicon.png" type="image/png"/>
+<meta name="description" content="{{description or renderData.description}}"/>
 <meta property="og:title" content="{{ ogTitle or title or renderData.title }}"/>
 <meta property="og:description" content="{{description or renderData.description}}"/>
 <meta property="og:url" content="https://joseli.to{{ page.url }}"/>
 <meta property="og:type" content="{{ ogType or renderData.ogType or 'article' }}"/>
 <meta property="og:image" content="{{ ogImage or meta.ogImage }}"/>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ ogTitle or title or renderData.title }}"/>
+<meta name="twitter:description" content="{{description or renderData.description}}"/>
+<meta name="twitter:image" content="{{ ogImage or meta.ogImage }}"/>
+<meta name="twitter:creator" content="{{ meta['locale']['twitter'] or '@breakzplatform'}}" />
+<meta property="twitter:domain" content="joseli.to">
+<meta property="twitter:url" content="https://joseli.to{{ page.url }}"/>
 <script async defer data-website-id="bd6cd9cf-0246-4d86-9618-8b172127919a" src="https://sc.joseli.to/umami.js"></script>
+<link href="https://github.com/breakzplatform" rel="me">
+<link href="https://twitter.com/breakzplatform" rel="me">
