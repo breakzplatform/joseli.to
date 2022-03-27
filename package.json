@@ -18,6 +18,8 @@
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
     "@11ty/eleventy-navigation": "^0.3.2",
+    "@11ty/eleventy-plugin-rss": "^1.1.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
     "autoprefixer": "^10.4.4",
     "css-loader": "^6.7.1",
     "cssnano": "^5.1.5",
@@ -32,7 +34,10 @@
     "webpack-cli": "^4.9.2"
   },
   "dependencies": {
+    "@orchidjs/eleventy-plugin-ids": "^0.1.1",
+    "@photogabble/eleventy-plugin-word-stats": "^1.0.0",
     "axios": "^0.26.1",
+    "eleventy-plugin-recent-changes": "^1.0.1",
     "rss-parser": "^3.12.0"
   }
 }
