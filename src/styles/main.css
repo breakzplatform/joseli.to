@@ -13,7 +13,7 @@
 }
 
 .post a[href^="https://"]::after {
-    @apply text-purple-900;
+    @apply text-pure-purple-900;
     content: "↗";
     font-family: system-ui,-apple-system,sans-serif;
     font-style: normal;
