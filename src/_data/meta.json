@@ -2,7 +2,7 @@
   "en": {
     "footer": {
       "cc": {
-        "link": "https://creativecommons.org/licenses/by-sa/3.0/"
+        "link": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
       "source": "View Source",
       "made": "Made with 11ty"
@@ -16,7 +16,7 @@
     },
     "footer": {
       "cc": {
-        "link": "https://creativecommons.org/licenses/by-sa/3.0/deed.pt_BR"
+        "link": "https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR"
       },
       "source": "Código-fonte",
       "made": "Feito com 11ty"
