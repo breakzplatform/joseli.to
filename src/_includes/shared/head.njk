@@ -1,5 +1,10 @@
-<link rel="stylesheet" type="text/css" href="/assets/main.css"/>
+<link rel="stylesheet" type="text/css" href="https://joseli.to/assets/main.css"/>
 <meta name="viewport" content="width=device-width"/>
 <meta charSet="utf-8"/>
-<link rel="shortcut icon" href="/assets/favicon.png" type="image/png"/>
-<meta name="theme-color" content="#9480FF"/>
+<link rel="shortcut icon" href="https://joseli.to/assets/favicon.png" type="image/png"/>
+<meta name="theme-color" content="#652585"/>
+<meta property="og:title" content="{{ ogTitle or title or renderData.title }}"/>
+<meta property="og:description" content="{{description or renderData.description}}"/>
+<meta property="og:url" content="https://joseli.to{{ page.url }}"/>
+<meta property="og:type" content="{{ ogType or renderData.ogType or 'article' }}"/>
+<meta property="og:image" content="{{ ogImage or meta.defaultOgImage }}"/>

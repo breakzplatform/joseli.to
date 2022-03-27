@@ -7,7 +7,7 @@
   <body class="bg-pure-purple-900 text-pure-purple-50">
     <main class="max-w-xl mx-auto">
       <div class="p-8 sm:p-12"><img src="/assets/logo.png" width="192" height="157.17" alt="Joselito" class="mx-auto"></div>
-      <div class="sm:rounded-lg overflow-hidden shadow-lg">
+      <div class="overflow-hidden shadow-lg md:rounded-lg">
         <div class="p-8 sm:p-12 text-center bg-pure-purple-800">
           <pre class="text-xl sm:text-3xl npx font-mono select-all">npx joselito{% if locale != 'en' %} --lang={{ locale }}{% endif %}</pre>
         </div>
@@ -34,7 +34,8 @@
         </div>
       </div>
       <div class="p-8 sm:p-12 text-center text-xs">
-        <p><a target="_blank" rel="noopener noreferrer" class="underline decoration-pure-purple-500 underline-offset-2" href="{{ meta[locale]['footer']['cc']['link'] }}">CC BY-SA</a> 2010-{% currentYear %} Joselito · <a target="_blank" class="underline decoration-pure-purple-500 underline-offset-2" rel="noopener noreferrer" href="https://11ty.dev/">{{ meta[locale]["footer"]["made"] }}</a> · <a target="_blank" rel="noopener noreferrer" class="underline decoration-pure-purple-500 underline-offset-2" href="https://github.com/breakzplatform/joseli.to">{{ meta[locale]["footer"]["source"] }}</a>
+        <p class="mb-2">2010-{% currentYear %} Joselito Júnior (<a target="_blank" rel="noopener noreferrer" class="underline decoration-pure-purple-500 underline-offset-2" href="{{ meta[locale]['footer']['cc']['link'] }}">CC BY-SA</a>)</p>
+        <p><a target="_blank" class="underline decoration-pure-purple-500 underline-offset-2" rel="noopener noreferrer" href="https://11ty.dev/">{{ meta[locale]["footer"]["made"] }}</a> · <a target="_blank" rel="noopener noreferrer" class="underline decoration-pure-purple-500 underline-offset-2" href="https://github.com/breakzplatform/joseli.to">{{ meta[locale]["footer"]["source"] }}</a>
         </p>
       </div>
     </main>
