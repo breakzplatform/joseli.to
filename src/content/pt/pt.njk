@@ -17,34 +17,53 @@ eleventyExcludeFromCollections: true
 </div>
 
 {# <div class="p-12 bg-pure-purple-600">
-            <div class="mb-8">
-                <a href="{{ '/notinhas/' | url }}">
-                    <h1 class="uppercase text-sm font-black mb-2">Notinhas</h1>
-                </a>
-                <ul class="list-none">
-                    {% for post in notinhas | reverse %}
-                        <li>
-                            <strong>
-                                <a href="{{ post.url | url }}" class="underline decoration-dotted underline-offset-2 text-xl">{{ post.data.title }}</a>
-                            </strong>
-                            <time class="text-xs" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-                        </li>
-                    {% endfor %}
-                </ul>
+    <div class="mb-8">
+        <a href="{{ '/notinhas/' | url }}">
+            <h1 class="uppercase text-sm font-black mb-2">Notinhas</h1>
+        </a>
+        <ul class="list-none">
+            {% for post in notinhas | reverse %}
+                <li>
+                    <strong>
+                        <a href="{{ post.url | url }}" class="underline decoration-dotted underline-offset-2 text-xl">{{ post.data.title }}</a>
+                    </strong>
+                    <time class="text-xs" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div>
+        <h1 class="uppercase text-sm font-black mb-2">Artigos</h1>
+        <ul class="list-none">
+            {% for post in posts | reverse%}
+                {% if (loop.index <= 3) %}
+                    <li>
+                        <strong>
+                            <a href="{{ post.url | url }}" class="underline decoration-dotted underline-offset-2 text-xl">{{ post.data.title }}</a>
+                        </strong>
+                        <time class="text-xs" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</div> #}
+
+{% include "../../_includes/components/linktree.njk" %}
+
+{# <div id="revue-embed" class="p-12 bg-pure-purple-400 text-pure-purple-900">
+    <h1 class="uppercase text-sm font-black mb-2">Newsletter</h1>
+    <p class="pb-4">A <strong>Jose7</strong> é uma newsletter</p>
+    <form action="http://7.joseli.to/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
+        <div class="flex mb-4">
+            <div class="revue-form-group flex-grow">
+                <label for="member_email" class="hidden">E-mail:</label>
+                <input class="revue-form-field w-full px-4 py-2 rounded-l-full drop-shadow-xl shadow-inner" placeholder="Seu endereço de e-mail" type="email" name="member[email]" id="member_email">
             </div>
-            <div>
-                <h1 class="uppercase text-sm font-black mb-2">Artigos</h1>
-                <ul class="list-none">
-                    {% for post in posts | reverse%}
-                        {% if (loop.index <= 3) %}
-                            <li>
-                                <strong>
-                                    <a href="{{ post.url | url }}" class="underline decoration-dotted underline-offset-2 text-xl">{{ post.data.title }}</a>
-                                </strong>
-                                <time class="text-xs" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-                            </li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
+            <div class="revue-form-actions">
+                <input class="w-full px-4 py-2 rounded-r-full bg-pure-purple-800 text-pure-purple-200 text-p font-bold drop-shadow-xl shadow-inner" type="submit" value="Inscreva-se" name="member[subscribe]" id="member_submit">
             </div>
-        </div> #}
+        </div>
+        <div class="revue-form-footer text-xs">Ao confirmar sua inscrição, você afirma que concorda com os <a target="_blank" rel="noopener noreferrer" href="https://www.getrevue.co/terms" class="underline">Termos de Serviço</a> e a <a target="_blank" rel="noopener noreferrer" href="https://www.getrevue.co/privacy" class="underline">Política de Privacidade</a> da plataforma Revue.</div>
+    </form>
+</div> #}
