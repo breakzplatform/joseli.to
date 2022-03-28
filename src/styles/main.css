@@ -8,8 +8,8 @@
 }
 
 @layer utilities {
-    .post p,
-    .post pre {
+    .internal main p,
+    .internal main pre {
         @apply mb-4;
     }
     
