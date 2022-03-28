@@ -1,0 +1,11 @@
+---
+title: Changelog
+layout: layouts/base.njk
+permalink: "/pt/changelog/index.html"
+---
+
+<ul>
+  {%- for commit in collections.recentChanges %}
+        <li><a href="https://github.com/breakzplatform/joseli.to/commit/{{commit.hash}}"><time>{{ commit.authorDate }}</time> {{ commit.subject }}</a></li>
+  {%- endfor %}
+</ul>
