@@ -17,7 +17,7 @@
 <meta name="twitter:creator" content="{{ meta['locale']['twitter'] or '@breakzplatform'}}" />
 <meta property="twitter:domain" content="joseli.to">
 <meta property="twitter:url" content="https://joseli.to{{ page.url }}"/>
-<script src="/assets/alpine.js" defer></script>
+{% if (page.alpineEnabled) %}<script src="/assets/alpine.js" defer></script>{% endif %}
 <script async defer data-website-id="bd6cd9cf-0246-4d86-9618-8b172127919a" src="https://joseli.to/a"></script>
 <link href="https://github.com/breakzplatform" rel="me"/>
 <link href="https://twitter.com/breakzplatform" rel="me"/>
