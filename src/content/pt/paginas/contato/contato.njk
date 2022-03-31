@@ -3,28 +3,28 @@ title: Contato
 layout: layouts/base.njk
 eleventyNavigation:
   key: Contato
-  order: 3
+  order: 100
 ---
 
+<p>Quer que eu participe do seu evento, canal, live ou podcast? Será um grande prazer! A melhor forma de entrar em contato comigo e ter certeza que vai receber uma resposta é via e-mail, pelo formulário abaixo.</p>
+
 <form name="Contato" method="POST" action="/contato/sucesso/" data-netlify="true" data-netlify-recaptcha="true">
-  <p>
-    <label>Your Name: <input class="block rounded-lg" type="text" name="name"/></label>
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email"/></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea>
-    </label>
-  </p>
-  <p>
-    <label>
-      <span>Add file:</span>
-      <input name="file" type="file"/>
-    </label>
-  </p>
-  <div data-netlify-recaptcha="true"></div>
-  <p>
-    <button type="submit">Send</button>
-  </p>
+  <div>
+    <label for="name">Your Name:</label>
+    <input class="block rounded-md shadow-md my-2 p-2 w-full sm:w-96" type="text" name="name" id="name"/>
+  </div>
+  <div>
+    <label>Your Email:</label>
+    <input class="block rounded-md shadow-md my-2 p-2 w-full sm:w-96" type="email" name="email"/>
+  </div>
+  <div>
+    <label>Message:</label>
+    <textarea class="block rounded-md shadow-md my-2 p-2 w-full sm:w-96 h-48" name="message"></textarea>
+  </div>
+  <div>
+    <label>Add file:</label>
+    <input class="block rounded-md shadow-md my-2 p-2 w-full sm:w-96 bg-white" name="file" type="file"/>
+  </div>
+  <div data-netlify-recaptcha="true" class="my-4 shadow-md"></div>
+  <button class="block rounded-full bg-pure-purple-900 py-4 px-6 shadow-lg drop-shadow-md text-xl text-pure-purple-100 text-pure-purple-100 hover:bg-pure-purple-700 hover:text-pure-purple-50 font-black uppercase" type="submit">Enviar</button>
 </form>
