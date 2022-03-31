@@ -10,20 +10,16 @@ eleventyNavigation:
 
 <form name="Contato" method="POST" action="/contato/sucesso/" data-netlify="true" data-netlify-recaptcha="true">
   <div>
-    <label for="name">Your Name:</label>
-    <input class="block rounded-md shadow-md my-2 p-2 w-full sm:w-96" type="text" name="name" id="name"/>
+    <label class="block mt-4 uppercase font-black text-purple-900">E-mail</label>
+    <input class="block rounded-md shadow-md my-2 p-2 w-full sm:w-80" type="email" placeholder="venceslau.bras@bol.com.br" name="email"/>
   </div>
   <div>
-    <label>Your Email:</label>
-    <input class="block rounded-md shadow-md my-2 p-2 w-full sm:w-96" type="email" name="email"/>
+    <label class="block mt-4 uppercase font-black text-purple-900">Mensagem</label>
+    <textarea class="block rounded-md shadow-md my-2 p-2 w-full sm:max-w-xl h-52 text-sm font-mono" placeholder="Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss deixa as pessoas mais interessantis. Interagi no mé, cursus quis, vehicula ac nisi. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Aenean aliquam molestie leo, vitae iaculis nisl." name="message"></textarea>
   </div>
   <div>
-    <label>Message:</label>
-    <textarea class="block rounded-md shadow-md my-2 p-2 w-full sm:w-96 h-48" name="message"></textarea>
-  </div>
-  <div>
-    <label>Add file:</label>
-    <input class="block rounded-md shadow-md my-2 p-2 w-full sm:w-96 bg-white" name="file" type="file"/>
+    <label class="block mt-4 uppercase font-black text-purple-900">Anexo <span class="text-sm font-normal lowercase">(opicional)</span></label>
+    <input class="block rounded-md shadow-md my-2 p-2 w-full sm:w-80 bg-white" name="file" type="file"/>
   </div>
   <div data-netlify-recaptcha="true" class="my-4"></div>
   <button class="block rounded-full bg-pure-purple-900 py-4 px-6 shadow-lg drop-shadow-md text-xl text-pure-purple-100 text-pure-purple-100 hover:bg-pure-purple-700 hover:text-pure-purple-50 font-black uppercase" type="submit">Enviar</button>

@@ -7,12 +7,24 @@
     content: "$ ";
 }
 
+.footnotes-sep {
+    @apply hidden;
+}
+
+.footnotes {
+    @apply my-4 text-sm font-mono;
+}
+
 @layer utilities {
     .internal main p,
     .internal main pre {
         @apply mb-4;
     }
     
+    .internal main a {
+        @apply underline decoration-wavy underline-offset-4 decoration-pure-purple-300;
+    }
+
     .internal main a[href^="https://"]::after {
         content: "↗";
         font-family: system-ui,-apple-system,sans-serif;
@@ -21,5 +33,31 @@
         padding-left: 2px;
         line-height: .75;
         color: theme('colors.pure-purple.900');
+        display: inline-block;
+        border: 0;
+        text-decoration: none;
+    }
+
+    .internal main table {
+        @apply bg-white shadow-md rounded-lg overflow-hidden;
+    }
+
+    .internal main table thead {
+        @apply bg-purple-200 uppercase font-black text-purple-900 drop-shadow;
+    }
+
+    .internal main table thead th,
+    .internal main table thead td, {
+        @apply p-1;
+    }
+
+    .internal main table tbody th,
+    .internal main table tbody td, {
+        @apply p-2;
+    }
+
+    .internal main table th,
+    .internal main table td, {
+        @apply border border-purple-200;
     }
 }

@@ -1,13 +1,13 @@
 {% set navPages = collections.all | filterCollectionByLocale(locale) | eleventyNavigation %}
-<nav class="py-3 border-b">
-  <div class="max-w-4xl mx-auto flex flex-wrap items-center justify-between">
-    <a href="{{ navPages[0].url }}" class="font-black text-xl tracking-tight uppercase">Joselito</a>
-    <ul>
+<nav class="py-4 border-b">
+  <div class="max-w-4xl mx-auto px-4 flex flex-wrap items-center justify-between">
+    <a href="{{ navPages[0].url }}" class="font-black text-5xl tracking-tight uppercase drop-shadow-lg">Joselito</a>
+    <ul class="mt-4 sm:mt-0">
       {% for entry in navPages %}
         <li class="inline">
           <a
          href="{{ entry.url }}"
-         class="text-sm py-1 px-2 rounded mr-4 inline-block
+         class="text-sm rounded mr-6 py-2 inline-block
          {{'text-white' if entry.url in page.url
          else 'text-purple-300 hover:text-purple-500'}}">
             {{ entry.title }}

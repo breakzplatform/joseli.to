@@ -4,11 +4,11 @@
     {% include "../shared/head.njk" %}
     <script src="//unpkg.com/alpinejs" defer></script>
   </head>
-  <body class="bg-purple-200">
+  <body class="bg-purple-100">
     <header class="bg-purple-900 text-white">
       {% include "../components/navigation.njk" %}
     </header>
-    <main class="py-12 max-w-4xl mx-auto">
+    <main class="py-12 max-w-4xl mx-auto px-4">
       {{ content | safe }}
     </main>
     <script src="/assets/main.js"></script>
