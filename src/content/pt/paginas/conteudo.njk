@@ -1,13 +1,33 @@
 ---
 title: Conteúdo
 layout: layouts/base.njk
+alpineEnabled: true
 eleventyNavigation:
   key: Conteúdo
   order: 0
 ---
+
+<h1 contenteditable>Olá, seja bem vindo!</h1>
 
 <p>Aqui estão listados os conteúdos mais recentes publicados por mim. Dado a natureza de uma wiki deste site, provavelmente tudo que parece um link é realmente um link. Pode ir navegando sem medo, o site vai salvar o seu caminho.</p>
 
 <p>Você também pode acompanhar os conteúdos via feeds RSS.</p>
 
 <p>Na dúvida por onde começar? Comece pelos favoritos:</p>
+
+
+
+  <div x-data="{ openTab: 1 }">
+    <ul class="flex">
+      <li>
+        <a class="bg-white inline-block py-2 px-4 text-blue-700 font-semibold" @click.prevent="openTab = 1" href="#">Tab 1</a>
+      </li>
+      <li>
+        <a class="bg-white inline-block py-2 px-4 text-blue-700 font-semibold" @click.prevent="openTab = 2" href="#">Tab 2</a>
+      </li>
+    </ul>
+    <div class="w-full pt-4">
+      <div :class="(openTab === 1) ? 'block' : 'hidden'">Tab #1</div>
+      <div :class="(openTab === 2) ? 'block' : 'hidden'">Tab #2</div>
+    </div>
+  </div>
