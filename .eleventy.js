@@ -6,8 +6,25 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const anchorsPlugin = require('@orchidjs/eleventy-plugin-ids');
 const wordStats = require('@photogabble/eleventy-plugin-word-stats');
 const recentChanges = require('eleventy-plugin-recent-changes');
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
+const markdownItFootnote = require("markdown-it-footnote");
 
 module.exports = function (eleventyConfig) {
+
+  markdownLibrary = markdownIt({
+    html: true,
+    breaks: true,
+    linkify: true,
+    typographer: true,
+  })
+    .use(markdownItAnchor, {
+      permalink: true,
+      permalinkClass: "direct-link",
+      permalinkSymbol: "#",
+    })
+    .use(markdownItFootnote);
+  eleventyConfig.setLibrary("md", markdownLibrary);
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(syntaxHighlight);
@@ -23,8 +40,28 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/assets');
   eleventyConfig.addPassthroughCopy('src/_redirects');
   eleventyConfig.addPassthroughCopy('src/robots.txt');
+  eleventyConfig.addPassthroughCopy({
+    './node_modules/alpinejs/dist/cdn.js': './assets/alpine.js',
+  })
 
   eleventyConfig.addNunjucksShortcode("currentYear", () => `${(new Date()).getFullYear()}`);
+
+  eleventyConfig.addCollection("postsByYear", (collection) => {
+    const posts = collection.getFilteredByTags('posts').reverse();
+    const years = posts.map(post => post.date.getFullYear());
+    const uniqueYears = [...new Set(years)];
+  
+    const postsByYear = uniqueYears.reduce((prev, year) => {
+      const filteredPosts = posts.filter(post => post.date.getFullYear() === year);
+  
+      return [
+        ...prev,
+        [year, filteredPosts]
+      ]
+    }, []);
+  
+    return postsByYear;
+  });
 
   eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
     if (outputPath && outputPath.endsWith(".html")) {
@@ -37,6 +74,10 @@ module.exports = function (eleventyConfig) {
     }
 
     return content;
+  });
+
+  eleventyConfig.addFilter("filterCollectionByLocale", function(collection, locale) {
+    return collection.filter(item => item?.data?.locale === locale);
   });
 
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
@@ -58,6 +99,7 @@ module.exports = function (eleventyConfig) {
   });
 
   return {
+    markdownTemplateEngine: "njk",
     dir: { input: 'src', output: '_site' }
   };
 };
