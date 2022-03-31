@@ -1,0 +1,19 @@
+---
+title: "Anuários"
+layout: layouts/base.njk
+permalink: "/anuarios/index.html"
+tags: meta
+---
+
+ano novo novo tempo cada vez mais voce
+
+{% for year, yearPosts in collections.postsByYear %}
+  <h2>{{ year }}</h2>
+  <ul>
+    {% for post in yearPosts | filterCollectionByLocale(locale) | reverse %}
+      <li>{{ post.data.title }}</li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+
+em cada casa em cada canto

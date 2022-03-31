@@ -1,7 +1,7 @@
+{% set navPages = collections.all | filterCollectionByLocale(locale) | eleventyNavigation %}
 <nav class="py-3 border-b">
   <div class="max-w-4xl mx-auto flex flex-wrap items-center justify-between">
-    <a href="/{{ locale }}/" class="font-black text-xl tracking-tight uppercase">Joselito</a>
-    {% set navPages = collections.all | eleventyNavigation %}
+    <a href="{{ navPages[0].url }}" class="font-black text-xl tracking-tight uppercase">Joselito</a>
     <ul>
       {% for entry in navPages %}
         <li class="inline">

@@ -1,6 +1,6 @@
 {
   "tags": [
-    "notinhas"
+    "drops"
   ],
   "permalink": "/{{ title | slugify }}/index.html"
 }

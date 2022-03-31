@@ -20,6 +20,7 @@
     "@11ty/eleventy-navigation": "^0.3.2",
     "@11ty/eleventy-plugin-rss": "^1.1.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
+    "alpinejs": "^3.9.5",
     "autoprefixer": "^10.4.4",
     "css-loader": "^6.7.1",
     "cssnano": "^5.1.5",
@@ -38,6 +39,9 @@
     "@photogabble/eleventy-plugin-word-stats": "^1.0.0",
     "axios": "^0.26.1",
     "eleventy-plugin-recent-changes": "^1.0.1",
+    "markdown-it": "^12.3.2",
+    "markdown-it-anchor": "^8.4.1",
+    "markdown-it-footnote": "^3.0.3",
     "rss-parser": "^3.12.0"
   }
 }
