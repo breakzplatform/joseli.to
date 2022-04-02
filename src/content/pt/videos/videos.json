@@ -1,0 +1,6 @@
+{
+    "tags": [
+      "video"
+    ],
+    "permalink": "/{{ title | slugify }}/index.html"
+  }

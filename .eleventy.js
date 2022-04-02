@@ -47,7 +47,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addNunjucksShortcode("currentYear", () => `${(new Date()).getFullYear()}`);
 
   eleventyConfig.addCollection("postsByYear", (collection) => {
-    const posts = collection.getFilteredByTags('posts').reverse();
+    const posts = collection.getFilteredByTags('post').reverse();
     const years = posts.map(post => post.date.getFullYear());
     const uniqueYears = [...new Set(years)];
   

@@ -1,6 +1,6 @@
 {
   "tags": [
-    "posts"
+    "post"
   ],
   "permalink": "/{{ title | slugify }}/index.html"
 }

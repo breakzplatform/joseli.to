@@ -1,5 +1,5 @@
 {
     "locale": "en",
-    "tags": ["posts"],
+    "tags": ["post"],
     "permalink": "/{{ page.fileSlug }}/index.html"
   }
