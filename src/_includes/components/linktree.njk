@@ -4,7 +4,10 @@
             <ul>
             {% endif %}
             <li>
-                <a target="_blank" rel="noopener noreferrer" class="block text-center drop-shadow-xl bg-pure-purple-900 hover:bg-pure-purple-800 shadow-inner rounded-full px-4 py-2 {% if not loop.last %} mb-4 {% endif %} border-2 border-transparent" href="{{ item.link }}">{{ item.name | safe }} ↗️&#xFE0E;</a>
+                <a target="_blank" rel="noopener noreferrer" class="flex drop-shadow-xl bg-pure-purple-900 hover:bg-pure-purple-800 shadow-inner rounded-lg px-4 py-2 {% if not loop.last %} mb-4 {% endif %} border-2 border-transparent" href="{{ item.link }}">
+                    <div class="mr-4">{{ item.emoji | safe }}</div>
+                    <div class="flex-grow">{{ item.name | safe }} {% if loop.first and locale === "pt" %}<span class="inline-block font-mono text-xs">#dev #boundaryless</span>{% endif %}</div>
+                    </a>
             </li>
             {% if loop.last %}
             </ul>

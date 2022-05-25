@@ -1,79 +1,96 @@
 {
     "pt": [
         {
-            "name": "Aplique para <strong>trabalhos remotos nos EUA</strong>",
-            "link": "https://joselito.link/turingref"
+            "name": "Aplique para <strong>vagas remotas</strong> nos EUA",
+            "link": "https://joselito.link/turingref",
+            "emoji": "💻"
         },
         {
             "name": "Me siga e troque ideia no <strong>Twitter</strong>",
-            "link": "https://twitter.com/breakzplatform"
+            "link": "https://twitter.com/breakzplatform",
+            "emoji": "🐦"
         },
         {
             "name": "Veja meus projetos no <strong>GitHub</strong>",
-            "link": "https://github.com/breakzplatform"
+            "link": "https://github.com/breakzplatform",
+            "emoji": "👾"
         },
         {
             "name": "Fotos conceituais no <strong>Unsplash</strong>",
-            "link": "https://unsplash.com/@breakzplatform"
+            "link": "https://unsplash.com/@breakzplatform",
+            "emoji": "📸"
         },
         {
             "name": "Meus links favoritos no <strong>Raindrop.io</strong>",
-            "link": "https://raindrop.io/breakzplatform"
+            "link": "https://raindrop.io/breakzplatform",
+            "emoji": "🔗"
         },
         {
             "name": "O que estou ouvindo no <strong>Last.fm</strong>",
-            "link": "https://www.last.fm/user/joselitojunior"
+            "link": "https://www.last.fm/user/joselitojunior",
+            "emoji": "🎧"
         },
         {
             "name": "Conecte-se comigo no <strong>Polywork</strong>",
-            "link": "https://www.polywork.com/joselito"
+            "link": "https://www.polywork.com/joselito",
+            "emoji": "💼"
         },
         {
             "name": "Faça um <strong>Pix</strong> pra mim",
-            "link": "https://pix.joseli.to"
+            "link": "https://pix.joseli.to",
+            "emoji": "💸"
         },
         {
             "name": "Me mande um <strong>E-mail</strong>",
-            "link": "mailto:eu@joseli.to"
+            "link": "mailto:eu@joseli.to",
+            "emoji": "✉️"
         }
     ],
     "en": [
         {
             "name": "Follow me <strong>Twitter</strong>",
-            "link": "https://twitter.com/itsamejoselito"
+            "link": "https://twitter.com/itsamejoselito",
+            "emoji": "🐦"
         },
         {
             "name": "See my code on <strong>GitHub</strong>",
-            "link": "https://github.com/breakzplatform"
+            "link": "https://github.com/breakzplatform",
+            "emoji": "👨🏽‍💻"
         },
         {
             "name": "Some photos on <strong>Unsplash</strong>",
-            "link": "https://unsplash.com/@breakzplatform"
+            "link": "https://unsplash.com/@breakzplatform",
+            "emoji": "📸"
         },
         {
             "name": "Favorite links on <strong>Raindrop.io</strong>",
-            "link": "https://raindrop.io/breakzplatform"
+            "link": "https://raindrop.io/breakzplatform",
+            "emoji": "🔗"
         },
         {
             "name": "What I'm listening on <strong>Last.fm</strong>",
-            "link": "https://www.last.fm/user/joselitojunior"
+            "link": "https://www.last.fm/user/joselitojunior",
+            "emoji": "🎧"
         },
         {
             "name": "Connect on <strong>Polywork</strong>",
-            "link": "https://www.polywork.com/joselito"
+            "link": "https://www.polywork.com/joselito",
+            "emoji": "💼"
         },
         {
             "name": "Buy me a Coffee on <strong>Ko-fi</strong>",
-            "link": "https://ko-fi.com/joselito"
+            "link": "https://ko-fi.com/joselito",
+            "emoji": "☕️"
         },
         {
             "name": "Send me an <strong>E-mail</strong>",
-            "link": "mailto:eu@joseli.to"
+            "link": "mailto:eu@joseli.to",
+            "emoji": "✉️"
         }
     ],
     "turing": [
         {
-            "name": "Aplique para trabalhos remotos nos EUA",
+            "name": "Aplique para vagas remotas nos Estados Unidos",
             "link": "https://joselito.link/turingref"
         },
         {
@@ -101,7 +118,7 @@
             "link": "https://www.linkedin.com/showcase/turing-com-brasil/"
         },
         {
-            "name": "Marque uma reunião pelo Calendly",
+            "name": "Marque uma call pelo Calendly",
             "link": "https://calendly.com/joselito-turingcom"
         },
         {
