@@ -4,13 +4,12 @@ description: Sou desenvolvedor front-end, consultor, instrutor e palestrante. At
 ogType: website
 eleventyExcludeFromCollections: true
 ---
-{% set notinhas = collections.drops | filterCollectionByLocale(locale) %}
-{% set posts = (collections.post | filterCollectionByLocale(locale)) %}
 
 <!doctype html>
 <html lang="{{ locale }}">
     <head>
         {% include "shared/head.njk" %}
+        <meta name="theme-color" content="#54179f"/>
     </head>
     <body class="bg-royal-blue-900 text-royal-blue-50">
         <main class="max-w-xl mx-auto">
@@ -28,9 +27,13 @@ eleventyExcludeFromCollections: true
                         {% if loop.first %}
                             <ul>
                             {% endif %}
-                                <li>
-                                    <a target="_blank" rel="noopener noreferrer" class="block font-bold text-center drop-shadow-xl bg-white text-royal-blue-900 shadow-inner rounded-md px-4 py-2 {% if not loop.last %} mb-4 {% endif %} border-2 border-transparent" href="{{ item.link }}">{{ item.name | safe }}  {% if loop.first %}<div class="font-mono text-xs">#dev #boundaryless</div>{% endif %}</a>
-                                </li>
+                            <li>
+                                <a target="_blank" rel="noopener noreferrer" class="block font-bold text-center drop-shadow-xl bg-white text-royal-blue-900 shadow-inner rounded-md px-4 py-2 {% if not loop.last %} mb-4 {% endif %} border-2 border-transparent" href="{{ item.link }}">{{ item.name | safe }}
+                                    {% if loop.first %}
+                                        <div class="font-mono text-xs">#dev #boundaryless</div>
+                                    {% endif %}
+                                </a>
+                            </li>
                             {% if loop.last %}
                             </ul>
                         {% endif %}
@@ -47,8 +50,9 @@ eleventyExcludeFromCollections: true
                                 </li>
                             {% endif %}
                             {% if loop.last %}
-                            <li>
-                                    <a rel="noopener noreferrer" class="block text-center drop-shadow-xl bg-royal-blue-800 hover:bg-royal-blue-700 shadow-inner rounded-md px-4 py-2 border-2 border-transparent" href="http://joseli.to/">Página inicial de <strong>joseli.to</strong></a>
+                                <li>
+                                    <a rel="noopener noreferrer" class="block text-center drop-shadow-xl bg-royal-blue-800 hover:bg-royal-blue-700 shadow-inner rounded-md px-4 py-2 border-2 border-transparent" href="http://joseli.to/">Página inicial de <strong>joseli.to</strong>
+                                    </a>
                                 </li>
                             </ul>
                         {% endif %}
