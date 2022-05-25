@@ -1,0 +1,73 @@
+---
+title: "Joselito — Community Manager na Turing.com"
+description: Sou desenvolvedor front-end, consultor, instrutor e palestrante. Atualmente trabalho como Community Manager na Turing.com. Amo aviões, a web e temakis.
+ogType: website
+eleventyExcludeFromCollections: true
+---
+{% set notinhas = collections.drops | filterCollectionByLocale(locale) %}
+{% set posts = (collections.post | filterCollectionByLocale(locale)) %}
+
+<!doctype html>
+<html lang="{{ locale }}">
+    <head>
+        {% include "shared/head.njk" %}
+    </head>
+    <body class="bg-royal-blue-900 text-royal-blue-50">
+        <main class="max-w-xl mx-auto">
+            <div class="p-8 sm:p-12"><img src="/assets/photo.jpg" width="157.17" height="157.17" alt="Joselito" class="rounded-full mx-auto drop-shadow-xl"></div>
+            <div class="overflow-hidden shadow-lg md:rounded-lg">
+                <div class="p-12 bg-royal-blue-800 text-center">
+                    <h1 class="uppercase text-3xl font-black mb-2">Joselito</h1>
+                    <p class="text-2xl">
+                        <a href="https://community.turing.com/latin-america-community/" target="_blank" rel="noopener" class="underline decoration-royal-blue-500 underline-offset-2">Community Manager</a > na <a href="https://joselito.link/turingref" target="_blank" rel="noopener" class="underline decoration-royal-blue-500 underline-offset-2">Turing.com</a>
+                    </p>
+                </div>
+                <div class="p-12 bg-royal-blue-700">
+                    <a href="https://joselito.link/turingref"><img src="/assets/turing.svg" alt="Logo da Turing" class="mb-10 mx-auto w-52"></a>
+                    {% for item in linktree["turing"] %}
+                        {% if loop.first %}
+                            <ul>
+                            {% endif %}
+                            {%if (loop.index <= 2) %}
+                                <li>
+                                    <a target="_blank" rel="noopener noreferrer" class="block font-bold text-center drop-shadow-xl bg-white text-royal-blue-900 shadow-inner rounded-full px-4 py-2 {% if not loop.last %} mb-4 {% endif %} border-2 text-lg border-transparent" href="{{ item.link }}">{{ item.name }} ↗️</a>
+                                </li>
+                            {% else %}
+                                <li>
+                                    <a target="_blank" rel="noopener noreferrer" class="block font-bold text-center drop-shadow-xl bg-white text-royal-blue-900 shadow-inner rounded-full px-4 py-2 {% if not loop.last %} mb-4 {% endif %} border-2 border-transparent" href="{{ item.link }}">{{ item.name }} ↗️</a>
+                                </li>
+                            {% endif %}
+                            {% if loop.last %}
+                            </ul>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="p-8 sm:p-12 bg-royal-blue-600">
+                    {% for item in linktree[locale] %}
+                        {% if loop.first %}
+                            <ul>
+                            {% endif %}
+                            {% if (loop.index > 1) and (loop.index < linktree[locale].length - 1) %}
+                                <li>
+                                    <a target="_blank" rel="noopener noreferrer" class="block font-bold text-center drop-shadow-xl bg-royal-blue-800 hover:bg-royal-blue-700 shadow-inner rounded-full px-4 py-2 {% if not loop.last %} mb-4 {% endif %} border-2 border-transparent" href="{{ item.link }}">{{ item.name }} ↗️</a>
+                                </li>
+                            {% endif %}
+                            {% if loop.last %}
+                            </ul>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+
+            </div>
+            <div class="p-8 sm:p-12 text-center text-xs">
+                <p class="mb-2">2010-{% currentYear %} Joselito Júnior (<a target="_blank" rel="noopener" class="underline decoration-royal-blue-500 underline-offset-2" href="{{ meta[locale]['footer']['cc']['link'] }}">CC BY-SA 4.0</a>)</p>
+                <p>
+                    <a target="_blank" class="underline decoration-royal-blue-500 underline-offset-2" rel="noopener" href="https://11ty.dev/">{{ meta[locale]["footer"]["made"] }}</a> · <a target="_blank" rel="noopener" class="underline decoration-royal-blue-500 underline-offset-2" href="https://github.com/breakzplatform/joseli.to">{{ meta[locale]["footer"]["source"] }}</a>
+                </p>
+                <div class="mt-8 flex justify-center">
+                    <img src="/assets/pe.svg" class="rounded h-16 shadow-2xl"/>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

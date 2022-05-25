@@ -1,54 +1,104 @@
 {
     "pt": [
         {
-            "name": "Twitter",
+            "name": "Aplique para trabalhos remotos nos EUA",
+            "link": "https://joselito.link/turingref"
+        },
+        {
+            "name": "Me siga e troque ideia no Twitter",
             "link": "https://twitter.com/breakzplatform"
         },
         {
-            "name": "GitHub",
+            "name": "Veja meus projetos no GitHub",
             "link": "https://github.com/breakzplatform"
         },
         {
-            "name": "Unsplash",
+            "name": "Fotos conceituais no Unsplash",
             "link": "https://unsplash.com/@breakzplatform"
         },
         {
-            "name": "Raindrop.io",
+            "name": "Meus links favoritos no Raindrop.io",
             "link": "https://raindrop.io/breakzplatform"
         },
         {
-            "name": "Faça um Pix",
+            "name": "Conecte-se comigo no Polywork",
+            "link": "https://www.polywork.com/joselito"
+        },
+        {
+            "name": "Faça um Pix pra mim",
             "link": "https://pix.joseli.to"
         },
         {
-            "name": "E-mail",
+            "name": "Me mande um E-mail",
             "link": "mailto:eu@joseli.to"
         }
     ],
     "en": [
         {
-            "name": "Twitter",
+            "name": "Follow me Twitter",
             "link": "https://twitter.com/itsamejoselito"
         },
         {
-            "name": "GitHub",
+            "name": "See my code on GitHub",
             "link": "https://github.com/breakzplatform"
         },
         {
-            "name": "Unsplash",
+            "name": "Some photos on Unsplash",
             "link": "https://unsplash.com/@breakzplatform"
         },
         {
-            "name": "Raindrop.io",
+            "name": "Favorite links on Raindrop.io",
             "link": "https://raindrop.io/breakzplatform"
+        },
+        {
+            "name": "Connect on Polywork",
+            "link": "https://www.polywork.com/joselito"
         },
         {
             "name": "Buy me a Coffee",
             "link": "https://ko-fi.com/joselito"
         },
         {
-            "name": "E-mail",
+            "name": "Send me an E-mail",
             "link": "mailto:eu@joseli.to"
+        }
+    ],
+    "turing": [
+        {
+            "name": "Aplique para trabalhos remotos nos EUA",
+            "link": "https://joselito.link/turingref"
+        },
+        {
+            "name": "Comunidade Turing LATAM",
+            "link": "https://community.turing.com/latin-america-community/"
+        },
+        {
+            "name": "Meetups da Turing Brasil",
+            "link": "https://www.meetup.com/turing-brasil/"
+        },
+        {
+            "name": "Turing Brasil no Twitter",
+            "link": "https://www.twitter.com/turingcombrasil"
+        },
+        {
+            "name": "Turing Brasil no Instagram",
+            "link": "https://www.instagram.com/turingcombrasil/"
+        },
+        {
+            "name": "Turing Brasil no Facebook",
+            "link": "https://www.facebook.com/turingcombrasil"
+        },
+        {
+            "name": "Turing Brasil no Linkedin",
+            "link": "https://www.linkedin.com/showcase/turing-com-brasil/"
+        },
+        {
+            "name": "Marque uma reunião pelo Calendly",
+            "link": "https://calendly.com/joselito-turingcom"
+        },
+        {
+            "name": "Entre em contato por E-mail",
+            "link": "mailto:joselito@turing.com"
         }
     ]
 }
