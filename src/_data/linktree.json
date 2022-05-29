@@ -38,7 +38,8 @@
         {
             "name": "Marque uma call pelo <strong>Calendly</strong>",
             "link": "https://calendly.com/joselito-turingcom/15min",
-            "emoji": "📞"
+            "emoji": "📞",
+            "onclick": "Calendly.initPopupWidget({url: 'https://calendly.com/joselito-turingcom/15min?hide_gdpr_banner=1&primary_color=54179f'});return false;"
         },
         {
             "name": "Faça um <strong>Pix</strong> pra mim",

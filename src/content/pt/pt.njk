@@ -56,24 +56,30 @@ eleventyExcludeFromCollections: true
         <iframe allowfullscreen allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" sandbox="allow-scripts allow-same-origin" src="data:text/html,<style scoped>html,body{margin:0;padding:0;}a{height:100%;display:block;background:center/cover no-repeat black url(https://i.ytimg.com/vi/DrD9sdMwRpQ/0.jpg)}a:hover .b{fill:red;opacity:1}svg{position:absolute;left:50%25;top:50%25;width:68px;height:48px;margin-left:-34px;margin-top:-24px}</style><a href=https://www.youtube-nocookie.com/embed/DrD9sdMwRpQ?modestbranding=1&showinfo=1&rel=1&autoplay=1><svg viewBox=%220 0 68 48%22><path class=b fill=%23222 opacity=.8 d=%22M67 8c-1-3-3-6-6-6-5-2-27-2-27-2S12 0 7 2C4 2 2 5 1 8L0 24l1 16c1 3 3 6 6 6 5 2 27 2 27 2s22 0 27-2c3 0 5-3 6-6l1-16-1-16z%22/><path d=%22M45 24L27 14v20%22fill=%23fff>"></iframe>
         {# <iframe src="https://www.youtube.com/embed/DrD9sdMwRpQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> #}
     </div>
-    
+
     <a target="_blank" rel="noopener noreferrer" class="block font-bold text-center drop-shadow-xl bg-white text-pure-purple-900 shadow-inner rounded-md px-4 py-2 mt-4 border-2 border-transparent" href="https://joselito.link/turingcom">Comece a trabalhar remoto ganhando em Dólar</a>
-    <a class="block text-center drop-shadow-xl bg-white text-pure-purple-900 shadow-inner rounded-md px-4 py-2 mt-4 border-2 border-transparent" href="/turing/">Veja mais links da <strong>Turing.com</strong></a>
+    <a class="block text-center drop-shadow-xl bg-white text-pure-purple-900 shadow-inner rounded-md px-4 py-2 mt-4 border-2 border-transparent" href="/turing/">Veja mais links da <strong>Turing.com</strong>
+    </a>
 </div>
 
 {# <div id="revue-embed" class="p-12 bg-pure-purple-300 text-pure-purple-900">
     <h1 class="uppercase text-sm font-black mb-2">Newsletter</h1>
     <p class="pb-4">A <strong>Jose7</strong> é uma newsletter</p>
-    <form action="http://7.joseli.to/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
+    <form id="sendy" action="https://joselito.email/sendy/subscribe" method="POST" accept-charset="utf-8">
         <div class="flex mb-4">
             <div class="revue-form-group flex-grow">
-                <label for="member_email" class="hidden">E-mail:</label>
-                <input class="revue-form-field w-full px-4 py-2 rounded-l-full drop-shadow-xl shadow-inner" placeholder="l.inacio13@bol.com.br" type="email" name="member[email]" id="member_email">
+                <label for="email" class="hidden">E-mail:</label>
+                <input class="revue-form-field w-full px-4 py-2 rounded-l-full drop-shadow-xl shadow-inner" placeholder="l.inacio13@bol.com.br" type="email" name="email" id="email">
             </div>
-            <div class="revue-form-actions">
-                <input class="w-full px-4 py-2 rounded-r-full bg-pure-purple-800 text-pure-purple-200 text-p font-bold drop-shadow-xl shadow-inner" type="submit" value="Inscreva-se" name="member[subscribe]" id="member_submit">
+            <div class="hidden">
+                <label for="hp">HP</label>
+                <input type="text" name="hp" id="hp"/>
+                <input type="hidden" name="list" value="REiwg5mJtq0NWlOPKVY4dw"/>
+                <input type="hidden" name="subform" value="yes"/>
+            </div>
+            <div>
+                <button data-sitekey="6Lfu0CggAAAAAC_SrEoKv7gJapGyCn4ib-5laHjO" data-callback="onSubmit" class="g-recaptcha w-full px-4 py-2 rounded-r-full bg-pure-purple-800 text-pure-purple-200 text-p font-bold drop-shadow-xl shadow-inner">Inscreva-se</button>
             </div>
         </div>
-        <div class="revue-form-footer text-xs">Ao confirmar sua inscrição, você afirma que concorda com os <a target="_blank" rel="noopener noreferrer" href="https://www.getrevue.co/terms" class="underline">Termos de Serviço</a> e a <a target="_blank" rel="noopener noreferrer" href="https://www.getrevue.co/privacy" class="underline">Política de Privacidade</a> da plataforma Revue.</div>
     </form>
 </div> #}

@@ -23,9 +23,26 @@
           <a target="_blank" class="underline decoration-pure-purple-500 underline-offset-2" rel="noopener" href="https://11ty.dev/">{{ meta[locale]["footer"]["made"] }}</a> · <a target="_blank" rel="noopener" class="underline decoration-pure-purple-500 underline-offset-2" href="https://github.com/breakzplatform/joseli.to">{{ meta[locale]["footer"]["source"] }}</a>
         </p>
         <div class="mt-8 flex justify-center">
-        <img src="/assets/pe.svg" class="rounded h-16 shadow-2xl" />
+          <img src="/assets/pe.svg" class="rounded h-16 shadow-2xl"/>
         </div>
       </div>
     </main>
+    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    {# <script src="https://www.google.com/recaptcha/api.js" async defer></script> #}
+    <script>
+      function onSubmit(token) {
+        document
+          .getElementById("sendy")
+          .submit();
+      }(function () {
+        const calendlyWidget = document.createElement('link');
+        calendlyWidget.href = 'https://assets.calendly.com/assets/external/widget.css';
+        calendlyWidget.rel = 'stylesheet';
+        calendlyWidget.type = 'text/css';
+        document
+          .getElementsByTagName('head')[0]
+          .appendChild(calendlyWidget);
+      })();
+    </script>
   </body>
 </html>
