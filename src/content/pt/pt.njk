@@ -6,12 +6,12 @@ ogType: website
 eleventyExcludeFromCollections: true
 ---
 {% set notinhas = collections.drops | filterCollectionByLocale(locale) %}
-{% set posts = (collections.post | filterCollectionByLocale(locale) ) %}
+{% set posts = (collections.post | filterCollectionByLocale(locale)) %}
 
 <div class="p-12 bg-pure-purple-700">
     <h1 class="uppercase text-sm font-black mb-2">Sobre</h1>
     <div class="flex">
-        <p>Sou desenvolvedor front-end, consultor, instrutor e palestrante. Atualmente trabalho como <a href="https://community.turing.com/latin-america-community/" target="_blank" rel="noopener" class="font-bold underline decoration-pure-purple-500 underline-offset-2">Community Manager</a> na <a href="https://joselito.link/turingcom" target="_blank" rel="noopener" class="font-bold underline decoration-pure-purple-500 underline-offset-2">Turing.com</a>. Amo aviões, a web e temakis.</p>
+        <p>Sou desenvolvedor front-end, consultor, instrutor e palestrante. Atualmente trabalho como <a href="/turing/" class="font-bold underline decoration-pure-purple-500 underline-offset-2">Community Manager</a> na <a href="https://joselito.link/turingcom" target="_blank" rel="noopener" class="font-bold underline decoration-pure-purple-500 underline-offset-2">Turing.com</a>. Amo aviões, a web e temakis.</p>
         {% include "../../_includes/components/avatar.njk" %}
     </div>
 </div>
@@ -51,7 +51,15 @@ eleventyExcludeFromCollections: true
 
 {% include "../../_includes/components/linktree.njk" %}
 
-{# <div id="revue-embed" class="p-12 bg-pure-purple-400 text-pure-purple-900">
+<div class="p-8 sm:p-12 bg-pure-purple-400">
+    <div class="aspect-w-16 aspect-h-9 rounded-md drop-shadow-xl overflow-hidden">
+        <iframe src="https://www.youtube.com/embed/DrD9sdMwRpQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <a target="_blank" rel="noopener noreferrer" class="block font-bold text-center drop-shadow-xl bg-white text-pure-purple-900 shadow-inner rounded-md px-4 py-2 mt-4 border-2 border-transparent" href="https://joselito.link/turingcom">Comece a trabalhar remoto ganhando em Dólar</a>
+    <a class="block text-center drop-shadow-xl bg-white text-pure-purple-900 shadow-inner rounded-md px-4 py-2 mt-4 border-2 border-transparent" href="/turing/">Veja mais links da <strong>Turing.com</strong></a>
+</div>
+
+{# <div id="revue-embed" class="p-12 bg-pure-purple-300 text-pure-purple-900">
     <h1 class="uppercase text-sm font-black mb-2">Newsletter</h1>
     <p class="pb-4">A <strong>Jose7</strong> é uma newsletter</p>
     <form action="http://7.joseli.to/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">

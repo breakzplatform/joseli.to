@@ -3,6 +3,9 @@ module.exports = {
     "./src/_includes/**/*.{html,md,njk}",
     "./src/content/**/*.{html,md,njk}",
   ],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
   theme: {
     extend: {
       colors: {

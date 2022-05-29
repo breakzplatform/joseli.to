@@ -36,6 +36,11 @@
             "emoji": "💼"
         },
         {
+            "name": "Marque uma call pelo <strong>Calendly</strong>",
+            "link": "https://calendly.com/joselito-turingcom/15min",
+            "emoji": "📞"
+        },
+        {
             "name": "Faça um <strong>Pix</strong> pra mim",
             "link": "https://pix.joseli.to",
             "emoji": "💸"
@@ -114,12 +119,12 @@
             "link": "https://www.facebook.com/turingcombrasil"
         },
         {
-            "name": "Turing Brasil no Linkedin",
+            "name": "Turing Brasil no LinkedIn",
             "link": "https://www.linkedin.com/showcase/turing-com-brasil/"
         },
         {
             "name": "Marque uma call pelo Calendly",
-            "link": "https://calendly.com/joselito-turingcom"
+            "link": "https://calendly.com/joselito-turingcom/15min"
         },
         {
             "name": "Entre em contato por E-mail",

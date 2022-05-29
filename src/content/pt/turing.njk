@@ -41,11 +41,17 @@ customTheme: true
                     {% endfor %}
                 </div>
                 <div class="p-8 sm:p-12 bg-royal-blue-600">
+                    <div class="aspect-w-16 aspect-h-9 rounded-md drop-shadow-xl overflow-hidden">
+                        <iframe src="https://www.youtube.com/embed/DrD9sdMwRpQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                        <a target="_blank" rel="noopener noreferrer" class="block font-bold text-center drop-shadow-xl bg-white text-royal-blue-900 shadow-inner rounded-md px-4 py-2 mt-4 border-2 border-transparent" href="https://joselito.link/turingcom">Comece a trabalhar remoto ganhando em Dólar</a>
+                </div>
+                <div class="p-8 sm:p-12 bg-royal-blue-500">
                     {% for item in linktree[locale] %}
                         {% if loop.first %}
                             <ul>
                             {% endif %}
-                            {% if (loop.index > 1) and (loop.index < linktree[locale].length - 1) %}
+                            {% if (loop.index > 1) and (loop.index < linktree[locale].length - 2) %}
                                 <li>
                                     <a target="_blank" rel="noopener noreferrer" class="block text-center drop-shadow-xl bg-royal-blue-800 hover:bg-royal-blue-700 shadow-inner rounded-md px-4 py-2 {% if not loop.last %} mb-4 {% endif %} border-2 border-transparent" href="{{ item.link }}">{{ item.name | safe }}</a>
                                 </li>
