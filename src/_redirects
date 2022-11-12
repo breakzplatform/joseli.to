@@ -2,4 +2,6 @@
 / /pt/ 301 Country=br
 / /en/ 301
 
-/.well-known/webfinger https://mastodon.joseli.to/.well-known/webfinger 301
+/.well-known/host-meta* https://mastodon.joseli.to/.well-known/host-meta:splat 301
+/.well-known/webfinger* https://mastodon.joseli.to/.well-known/webfinger:splat 301
+/.well-known/nodeinfo* https://mastodon.joseli.to/.well-known/nodeinfo:splat 301
