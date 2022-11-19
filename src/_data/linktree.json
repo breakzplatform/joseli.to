@@ -64,14 +64,14 @@
     ],
     "en": [
         {
-            "name": "Follow me <strong>Twitter</strong>",
-            "link": "https://twitter.com/itsamejoselito",
-            "emoji": "🐦"
-        },
-        {
-            "name": "Follow me <strong>Mastodon</strong>",
+            "name": "Follow me on <strong>Mastodon</strong>",
             "link": "https://mastodon.joseli.to/@me",
             "emoji": "🐘"
+        },
+        {
+            "name": "Follow me on <strong>Twitter</strong>",
+            "link": "https://twitter.com/itsamejoselito",
+            "emoji": "🐦"
         },
         {
             "name": "See my code on <strong>GitHub</strong>",
