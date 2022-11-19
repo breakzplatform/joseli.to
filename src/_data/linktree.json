@@ -11,6 +11,16 @@
             "emoji": "🐦"
         },
         {
+            "name": "Se o Musk destruír tudo, também estou no <strong>Mastodon</strong>",
+            "link": "https://mastodon.joseli.to/@eu",
+            "emoji": "🐘"
+        },
+        {
+            "name": "Aproveite e siga meu <strong>Koo</strong> também",
+            "link": "https://mastodon.joseli.to/@eu",
+            "emoji": "🐥"
+        },
+        {
             "name": "Veja meus projetos no <strong>GitHub</strong>",
             "link": "https://github.com/breakzplatform",
             "emoji": "💾"
@@ -57,6 +67,11 @@
             "name": "Follow me <strong>Twitter</strong>",
             "link": "https://twitter.com/itsamejoselito",
             "emoji": "🐦"
+        },
+        {
+            "name": "Follow me <strong>Mastodon</strong>",
+            "link": "https://mastodon.joseli.to/@me",
+            "emoji": "🐘"
         },
         {
             "name": "See my code on <strong>GitHub</strong>",
