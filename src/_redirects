@@ -1,6 +1,4 @@
-/ /pt/ 301 Language=pt
-/ /pt/ 301 Country=br
-/ /en/ 301
+/ https://linktr.ee/breakzplatform 301
 
 /.well-known/host-meta* https://mastodon.joseli.to/.well-known/host-meta:splat 301
 /.well-known/webfinger* https://mastodon.joseli.to/.well-known/webfinger:splat 301
