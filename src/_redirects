@@ -1,5 +1,5 @@
 / https://joselito.link 301
-/cv.pdf https://dsc.cloud/023956/CV-Joselito.pdf
+/cv.pdf https://joselito.link/cv.pdf
 
 /.well-known/host-meta* https://mastodon.joseli.to/.well-known/host-meta:splat 301
 /.well-known/webfinger* https://mastodon.joseli.to/.well-known/webfinger:splat 301
